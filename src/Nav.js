@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-        <nav className='flex'> 
+        <nav className='flex m-6'> 
                 <Link to='/'>
-                    <h1>Logo</h1>
+                    <h1 className="ml-6">bloom</h1>
                 </Link>
 
             <ul className='flex space-x-6 m-auto'>
