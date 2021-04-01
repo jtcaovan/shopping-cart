@@ -1,15 +1,14 @@
 import React from "react";
-import './index.css'
 import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-        <nav className='flex m-6'> 
-                <Link to='/'>
-                    <h1 className="ml-6">bloom</h1>
-                </Link>
+        <nav className='flex h-16 fixed top-0 inset-x-0 z-10 text-white'> 
+            <Link to='/'>
+                <h1 className="m-auto pl-8 text-5xl">bloom</h1>
+            </Link>
 
-            <ul className='flex space-x-6 m-auto'>
+            <ul className='flex space-x-6 m-auto text-xl'>
                 <Link to='/about'>
                     <li>About</li>
                 </Link>
