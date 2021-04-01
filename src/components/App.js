@@ -6,16 +6,16 @@ import monstera from '../assets/monstera.jpg'
 
 function App() {
   return (
-    <div>
+    <div className=''>
       <div className='fixed'>
-        <img src={hero} alt='' />
+        <img className='' src={hero} alt='' />
       </div>
 
       <div className="absolute bottom-1/4 inset-x-0">
-        <ul className='absolute top-10 h-screen inset-x-0 pt-16 flex bg-white justify-around'>
+        <ul className='absolute flex justify-around top-20 h-screen inset-x-0 pt-16 bg-white text-2xl'>
           <li>
-          <img className='h-96 rounded-lg' src={monstera} alt=''/>
-            <p>Best Sellers</p>
+            <img className='h-96 rounded-lg' src={monstera} alt=''/>
+              <p>Best Sellers</p>
           </li>
           <li>            
             <img className='h-96 rounded-lg' src={pothos} alt=''/>
