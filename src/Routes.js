@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Nav from './Nav'
-import App from './App'
-import About from './About'
-import Shop from './Shop'
-import Cart from './Cart'
+import Nav from '.components/Nav'
+import App from '.components/App'
+import About from '.components/About'
+import Shop from '.components/Shop'
+import Cart from '.components/Cart'
 
 const Routes = () => {
     return (
