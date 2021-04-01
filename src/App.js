@@ -7,22 +7,22 @@ import monstera from './assets/monstera.jpg'
 function App() {
   return (
     <div>
-      <div className='h-1/5 mb-10'>
-        <img className='w-9/12 m-auto overflow-hidden' src={hero} alt='' />
+      <div className=''>
+        <img className='m-auto' src={hero} alt='' />
       </div>
 
-      <div>
-        <ul className='flex justify-around'>
+      <div className="">
+        <ul className='flex -mt-40 bg-white justify-around'>
           <li>
-            <img className='h-96' src={snake} alt=''/>
+          <img className='h-96' src={monstera} alt=''/>
             <p>Best Sellers</p>
           </li>
           <li>            
-            <img className='h-96' src={collection} alt=''/>
+            <img className='h-96' src={snake} alt=''/>
             <p>Best for Beginners</p>
           </li>
           <li>
-            <img className='h-96' src={monstera} alt=''/>
+            <img className='h-96' src={collection} alt=''/>
             <p>Shop our collection</p>
           </li>
         </ul>
