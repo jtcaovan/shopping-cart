@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Nav from './Nav'
 import App from './App'
 import About from './About'
 import Shop from './Shop'
@@ -8,6 +9,7 @@ import Cart from './Cart'
 const Routes = () => {
     return (
         <Router>
+            <Nav />
             <Switch>
                 <Route exact path='/' component={App} />
                 <Route exact path='/about' component={About} />

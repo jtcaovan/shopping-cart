@@ -4,9 +4,12 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-        <nav>
-            <h3>Logo</h3>
-            <ul>
+        <nav className='flex'> 
+                <Link to='/'>
+                    <h1>Logo</h1>
+                </Link>
+
+            <ul className='flex space-x-6 m-auto'>
                 <Link to='/about'>
                     <li>About</li>
                 </Link>
