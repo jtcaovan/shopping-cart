@@ -2,11 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import watering from '../assets/watering.jpg'
 import pepperonia from '../assets/pepperonia.jpg'
+import window from '../assets/window.jpg'
 import yoga from '../assets/yoga.jpg'
 import pots from '../assets/pots.jpg'
 import collection2 from '../assets/collection2.jpg'
 import hero from '../assets/hero.jpg'
-import pothos from '../assets/hangingPothos.jpg'
+import snake2 from '../assets/snake2.jpg'
 import collection from '../assets/collection.jpg'
 import monstera from '../assets/monstera.jpg'
 
@@ -32,13 +33,14 @@ function App() {
 
       <div className="absolute bottom-1/4 inset-x-0">
         <div className="absolute top-32 inset-x-0">
+
           <ul className='flex justify-around pt-10 bg-white text-2xl'>
             <li>
               <img className='h-96 rounded-lg' src={monstera} alt=''/>
                 <p>Best Sellers</p>
             </li>
             <li>            
-              <img className='h-96 rounded-lg' src={pothos} alt=''/>
+              <img className='h-96 rounded-lg' src={snake2} alt=''/>
               <p>Beginner Friendly</p>
             </li>
             <li>
@@ -47,40 +49,68 @@ function App() {
             </li>
           </ul>
 
-            <ul className='flex justify-around'>
-              <li>
-                <img className="h-52 w-52 rounded-full" src={pepperonia} alt='' />
-                <h2> Planted with Love </h2>
-                <p>Our plants cultivated by experts who share<br></br>
-                the same passion for houseplants as you. We guarantee <br></br>
-                your plant arrives happy and healthy or your money back!
-                </p> 
-              </li>
-              <li>
-              <img className="h-52 w-52 rounded-full" src={collection2} alt='' />
-                <h2>Sustainable Approach</h2>
-                <p>Our Eco-Friendly Packaging is 100% biodegradable!<br></br>
-                Everything we ship can be broken down to be used <br></br>
-                as fertilzer for your plants!
-                </p> 
-              </li>
-              <li>
-              <img className="h-52 w-52 rounded-full" src={pots} alt='' />
-                <h2>Hand Crafted</h2>
-                <p> Our unique planters are hand-crafted by local artists! <br></br>
-                Each ceramic piece may have slight variations in size and color.
-                <br></br>
-                </p> 
-              </li>
-              {/* <li>
-                <img className="h-52 w-52 rounded-full" src={yoga} alt='' />
-                <h2>Breathe Better</h2> 
-                <p>Plants release oxygen into the air <br></br>
-                increasing air quality so you can move, <br></br>
-                breathe, and sleep easier.
-                </p>
-              </li> */}
-            </ul>
+
+          <div className='bg-red-200 bg-opacity-50'>
+            <div className='m-16 p-8 grid grid-cols-2 gap-6'>
+              <div className='-mb-10'>
+                <img className="" src={window} alt='' />
+              </div>
+
+              <div className=' my-10 pl-6 space-y-8'>
+                <h2 className='text-5xl'>Brighten Up Your Living Space</h2>
+                <p class='text-2xl'>Bring nature home with you. Incorpoating plants into your daily surroundings <br></br>
+                will bring your space to life. </p>
+              </div>
+
+              <div className='my-14 p-2 space-y-8'>
+                <h2 className='text-5xl'>Breathe Better. Live Better.</h2>
+                <p className='text-2xl'>Plants release oxygen into the air increasing air quality so you can move, breathe, and sleep easier.</p>
+              </div>
+
+              <div className='-mt-3'>
+                <img className="" src={yoga} alt='' />
+              </div>
+            </div>    
+          </div>
+
+
+
+          <h1 className='m-10 p-6 text-5xl text-center'>Why You'll Love Bloom</h1>
+          <ul className='flex text-center justify-around'>
+            <li>
+              <img className="m-auto h-52 w-52 rounded-full" src={pepperonia} alt='' />
+              <h2> Planted with Love </h2>
+              <p>Our plants cultivated by experts who share<br></br>
+              the same passion for houseplants as you. We guarantee <br></br>
+              your plant arrives happy and healthy or your money back!
+              </p> 
+            </li>
+            <li>
+            <img className="m-auto h-52 w-52 rounded-full" src={collection2} alt='' />
+              <h2>Sustainable Approach</h2>
+              <p>Our Eco-Friendly Packaging is 100% biodegradable!<br></br>
+              Everything we ship can be broken down to be used <br></br>
+              as fertilizer for your plants!
+              </p> 
+            </li>
+            <li>
+            <img className="m-auto h-52 w-52 rounded-full" src={pots} alt='' />
+              <h2>Hand Crafted</h2>
+              <p> Materials are sourced locally and hand-crafted by artisans <br></br> 
+                from our community. Each ceramic piece may have slight<br></br>
+                  variations in size and color so you'll find <br></br>
+                each planter unique to your own living space.
+              </p> 
+            </li>
+            {/* <li>
+              <img className="h-52 w-52 rounded-full" src={yoga} alt='' />
+              <h2>Breathe Better</h2> 
+              <p>Plants release oxygen into the air <br></br>
+              increasing air quality so you can move, <br></br>
+              breathe, and sleep easier.
+              </p>
+            </li> */}
+          </ul>
         </div>
       </div>
 
