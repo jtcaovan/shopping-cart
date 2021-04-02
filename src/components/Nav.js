@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-        <nav className='flex sticky h-16 z-10 '> 
+        <nav className='flex h-16 w-full text-white hover:bg-white hover:text-black'> 
             <Link to='/'>
                 <h1 className="m-auto pl-8 text-5xl">bloom</h1>
             </Link>

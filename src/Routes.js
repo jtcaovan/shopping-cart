@@ -1,8 +1,7 @@
 import React from 'react'
 import './index.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Banner from './components/Banner'
-import Nav from './components/Nav'
+import Header from './components/Header'
 import App from './components/App'
 import About from './components/About'
 import Shop from './components/Shop'
@@ -12,10 +11,7 @@ import Footer from './components/Footer'
 const Routes = () => {
     return (
         <Router>
-            <div>
-                <Banner />
-                <Nav />
-            </div>
+            <Header />
             <Switch>
                 <Route exact path='/' component={App} />
                 <Route exact path='/about' component={About} />

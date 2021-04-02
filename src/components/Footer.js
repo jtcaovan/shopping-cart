@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return(
-        <footer className='bg-white'>
+        <footer className='relative bottom-0 bg-white'>
             Hello
         </footer>
     )
