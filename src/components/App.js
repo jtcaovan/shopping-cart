@@ -13,10 +13,9 @@ import monstera from '../assets/monstera.jpg'
 
 function App() {
   return (
-    <div className=''>
-
+    <div id='mainContainer' className='relative'>
       <div 
-        className='relative bg-cover bg-fixed bg-no-repeat bg-opacity-20 h-screen p-10' 
+        className='bg-cover bg-fixed bg-no-repeat bg-opacity-20 h-screen p-10' 
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${hero})` }}>
 
           <div className='absolute md:bottom-44 md:right-36 2xl:bottom-80 2xl:right-80 text-white'>
@@ -28,11 +27,11 @@ function App() {
               <button className='bg-red-500 text-2xl p-4 w-48'>Shop Now</button>
             </Link>
           </div>
-
       </div>
 
-      <div className="absolute bottom-1/4 inset-x-0">
-        <div className="absolute top-32 inset-x-0">
+      <div id='contentContainer' className="relative min-h-0 h-auto">
+
+        <div className="h-full absolute bottom-1/4 -top-32 inset-x-0">
 
           <ul className='flex justify-around pt-10 bg-white text-2xl'>
             <li>
@@ -58,7 +57,7 @@ function App() {
 
               <div className=' my-10 pl-6 space-y-8'>
                 <h2 className='text-5xl'>Brighten Up Your Living Space</h2>
-                <p class='text-2xl'>Bring nature home with you. Incorpoating plants into your daily surroundings <br></br>
+                <p class='text-2xl'>Bring nature home with you. Incorpoating plants into your daily surroundings 
                 will bring your space to life. </p>
               </div>
 
@@ -112,6 +111,7 @@ function App() {
             </li> */}
           </ul>
         </div>
+
       </div>
 
     </div>
