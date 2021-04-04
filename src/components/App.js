@@ -4,6 +4,7 @@ import watering from '../assets/watering.jpg'
 import pepperonia from '../assets/pepperonia.jpg'
 import window from '../assets/window.jpg'
 import yoga from '../assets/yoga.jpg'
+import work from '../assets/work.jpg'
 import pots from '../assets/pots.jpg'
 import collection2 from '../assets/collection2.jpg'
 import hero from '../assets/hero.jpg'
@@ -49,25 +50,25 @@ function App() {
           </ul>
 
 
-          <div className='bg-red-200 bg-opacity-50'>
-            <div className='m-16 p-8 grid grid-cols-2 gap-6'>
-              <div className='-mb-10'>
-                <img className="" src={window} alt='' />
+          <div className=''>
+            <div className='my-24 p-4 grid grid-cols-2 gap-x-6 gap-y-28'>
+              <div className=''>
+                <img className="rounded-md" src={work} alt='' />
               </div>
 
               <div className=' my-10 pl-6 space-y-8'>
-                <h2 className='text-5xl'>Brighten Up Your Living Space</h2>
-                <p class='text-2xl'>Bring nature home with you. Incorpoating plants into your daily surroundings 
+                <h2 className='text-3xl'>Brighten Up Your Living Space</h2>
+                <p class='text-xl'>Bring nature home with you. Incorpoating plants into your daily surroundings 
                 will bring your space to life. </p>
               </div>
 
               <div className='my-14 p-2 space-y-8'>
-                <h2 className='text-5xl'>Breathe Better. Live Better.</h2>
-                <p className='text-2xl'>Plants release oxygen into the air increasing air quality so you can move, breathe, and sleep easier.</p>
+                <h2 className='text-3xl'>Breathe Better. Live Better.</h2>
+                <p className='text-xl'>Plants release oxygen into the air increasing air quality so you can move, breathe, and sleep easier.</p>
               </div>
 
-              <div className='-mt-3'>
-                <img className="" src={yoga} alt='' />
+              <div className=''>
+                <img className="rounded-md" src={window} alt='' />
               </div>
             </div>    
           </div>
