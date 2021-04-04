@@ -32,18 +32,18 @@ function App() {
 
       <div id='contentContainer' className="relative min-h-0 h-auto">
 
-        <div className="h-full absolute bottom-1/4 -top-32 inset-x-0">
+        <div className="h-full absolute bottom-1/4 -top-16 inset-x-0">
 
-          <ul className='flex justify-around pt-10 bg-white text-2xl'>
-            <li>
+          <ul className='flex justify-around pt-14 bg-white text-2xl'>
+            <li className='space-y-6'>
               <img className='h-96 rounded-lg' src={monstera} alt=''/>
-                <p>Best Sellers</p>
+                <p className=''>Best Sellers</p>
             </li>
-            <li>            
+            <li className='space-y-6'>            
               <img className='h-96 rounded-lg' src={snake2} alt=''/>
               <p>Beginner Friendly</p>
             </li>
-            <li>
+            <li className='space-y-6'>
               <img className='h-96 rounded-lg' src={collection} alt=''/>
               <p>Shop our curated collection</p>
             </li>
@@ -51,15 +51,21 @@ function App() {
 
 
           <div className=''>
-            <div className='my-24 p-4 grid grid-cols-2 gap-x-6 gap-y-28'>
-              <div className=''>
-                <img className="rounded-md" src={work} alt='' />
-              </div>
+            <div className='my-24 grid grid-rows-2 grid-cols-2'>
 
               <div className=' my-10 pl-6 space-y-8'>
                 <h2 className='text-3xl'>Brighten Up Your Living Space</h2>
-                <p class='text-xl'>Bring nature home with you. Incorpoating plants into your daily surroundings 
+                <p class='text-xl'>Bring nature home with you. Incorpoating plants <br></br> 
+                into your daily surroundings 
                 will bring your space to life. </p>
+              </div>
+
+              <div className=''>
+                <img className="" src={work} alt='' />
+              </div>
+
+              <div className=''>
+                <img className="" src={window} alt='' />
               </div>
 
               <div className='my-14 p-2 space-y-8'>
@@ -67,9 +73,6 @@ function App() {
                 <p className='text-xl'>Plants release oxygen into the air increasing air quality so you can move, breathe, and sleep easier.</p>
               </div>
 
-              <div className=''>
-                <img className="rounded-md" src={window} alt='' />
-              </div>
             </div>    
           </div>
 
