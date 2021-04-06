@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import watering from '../assets/watering.jpg'
 import pepperonia from '../assets/pepperonia.jpg'
 import window from '../assets/window.jpg'
-import yoga from '../assets/yoga.jpg'
+import succulents from '../assets/succulents.jpg'
 import work from '../assets/work.jpg'
 import pots from '../assets/pots.jpg'
 import collection2 from '../assets/collection2.jpg'
@@ -32,50 +32,53 @@ function App() {
 
       <div id='contentContainer' className="relative min-h-0 h-auto">
 
-        <div className="h-full absolute bottom-1/4 -top-16 inset-x-0">
-
-          <ul className='flex justify-around pt-14 bg-white text-2xl'>
-            <li className='space-y-6'>
-              <img className='h-96 rounded-lg' src={monstera} alt=''/>
-                <p className=''>Best Sellers</p>
+        <div className="h-full absolute bottom-1/4 inset-x-0">
+          <ul className='flex justify-around pt-20 bg-white text-2xl'>
+            <li className='space-y-6 transform hover:scale-105'>
+              <img className='h-96 shadow-xl' src={monstera} alt=''/>
+                <p className='bg-opacity-30'>Best Sellers</p>
             </li>
-            <li className='space-y-6'>            
-              <img className='h-96 rounded-lg' src={snake2} alt=''/>
+            <li className='space-y-6 transform hover:scale-105'>            
+              <img className='h-96 shadow-xl' src={snake2} alt=''/>
               <p>Beginner Friendly</p>
             </li>
-            <li className='space-y-6'>
-              <img className='h-96 rounded-lg' src={collection} alt=''/>
-              <p>Shop our curated collection</p>
+            <li className='space-y-6 transform hover:scale-105'>
+              <img className='h-96 shadow-xl' src={collection} alt=''/>
+              <p>Shop our Curated Collection</p>
+            </li>
+            <li className='space-y-6 transform hover:scale-105'>
+              <img className='h-96 shadow-xl' src={succulents} alt=''/>
+              <p>Shop Succulents</p>
             </li>
           </ul>
 
 
-          <div className=''>
-            <div className='my-24 grid grid-rows-2 grid-cols-2'>
-
-              <div className=' my-10 pl-6 space-y-8'>
-                <h2 className='text-3xl'>Brighten Up Your Living Space</h2>
-                <p class='text-xl'>Bring nature home with you. Incorpoating plants <br></br> 
+          <div className='mt-24'>
+            <h1 className='text-center text-5xl'>Buy Some Plants</h1>
+            <div className='my-24 grid grid-rows-2 grid-cols-2 gap-y-24'>
+              <div className='m-auto space-y-8'>
+                <h2 className='text-2xl'>Brighten Up Your Living Space</h2>
+                <p class='text-lg'>Bring nature home with you. Incorpoating plants <br></br> 
                 into your daily surroundings 
                 will bring your space to life. </p>
               </div>
 
-              <div className=''>
+              <div className='mr-4'>
                 <img className="" src={work} alt='' />
               </div>
 
-              <div className=''>
+              <div className='ml-4'>
                 <img className="" src={window} alt='' />
               </div>
 
-              <div className='my-14 p-2 space-y-8'>
-                <h2 className='text-3xl'>Breathe Better. Live Better.</h2>
-                <p className='text-xl'>Plants release oxygen into the air increasing air quality so you can move, breathe, and sleep easier.</p>
+              <div className='m-auto space-y-8'>
+                <h2 className='text-2xl'>Breathe Better. Live Better.</h2>
+                <p className='text-lg'>Plants release oxygen increasing air quality <br></br>
+                 so you can move, breathe, and sleep easier.</p>
               </div>
 
             </div>    
           </div>
-
 
 
           <h1 className='m-10 p-6 text-5xl text-center'>Why You'll Love Bloom</h1>
