@@ -1,9 +1,14 @@
+import React from 'react'
+import shop from '../assets/shop.jpg'
+
 function Shop() {
-    return (
-      <div>
-        <h1>Hello from Shop</h1>
+  return (
+    <div className='relative'>
+      <div className='fixed h-3/4 overflow-hidden'>
+        <img src={shop} alt='' />
       </div>
-    );
+    </div>
+    )
   }
   
   export default Shop;

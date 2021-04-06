@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import watering from '../assets/watering.jpg'
 import pepperonia from '../assets/pepperonia.jpg'
 import window from '../assets/window.jpg'
 import succulents from '../assets/succulents.jpg'
@@ -34,28 +33,31 @@ function App() {
 
         <div className="h-full absolute bottom-1/4 inset-x-0">
           <ul className='flex justify-around pt-20 bg-white text-2xl'>
-            <li className='space-y-6 transform hover:scale-105'>
-              <img className='h-96 shadow-xl' src={monstera} alt=''/>
+            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>
+              <img className='h-96 shadow-xl hover:shadow-2xl' src={monstera} alt=''/>
                 <p className='bg-opacity-30'>Best Sellers</p>
             </li>
-            <li className='space-y-6 transform hover:scale-105'>            
+            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>            
               <img className='h-96 shadow-xl' src={snake2} alt=''/>
               <p>Beginner Friendly</p>
             </li>
-            <li className='space-y-6 transform hover:scale-105'>
+            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>
               <img className='h-96 shadow-xl' src={collection} alt=''/>
               <p>Shop our Curated Collection</p>
             </li>
-            <li className='space-y-6 transform hover:scale-105'>
+            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>
               <img className='h-96 shadow-xl' src={succulents} alt=''/>
-              <p>Shop Succulents</p>
+              <p className=''>Shop Succulents</p>
             </li>
           </ul>
 
 
           <div className='mt-24'>
-            <h1 className='text-center text-5xl'>Buy Some Plants</h1>
-            <div className='my-24 grid grid-rows-2 grid-cols-2 gap-y-24'>
+            <div className='text-center space-y-6'>
+              <h1 className='text-5xl'>Buy Some Plants</h1>
+              <h2 className='text-2xl'> Lorem ipsum dodaksd osdka </h2>
+            </div>
+            <div className='bg-gray-200 bg-opacity-40 py-8 my-24 grid grid-rows-2 grid-cols-2 gap-y-24'>
               <div className='m-auto space-y-8'>
                 <h2 className='text-2xl'>Brighten Up Your Living Space</h2>
                 <p class='text-lg'>Bring nature home with you. Incorpoating plants <br></br> 
@@ -63,7 +65,7 @@ function App() {
                 will bring your space to life. </p>
               </div>
 
-              <div className='mr-4'>
+              <div className=''>
                 <img className="" src={work} alt='' />
               </div>
 

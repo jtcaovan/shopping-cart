@@ -18,7 +18,7 @@ const Routes = () => {
                 <Route exact path='/shop' component={Shop} />
                 <Route exact path='/cart' component={Cart} />
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     )
 }
