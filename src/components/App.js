@@ -13,9 +13,9 @@ import monstera from '../assets/monstera.jpg'
 
 function App() {
   return (
-    <div id='mainContainer' className='relative'>
+    <div className='relative'>
       <div 
-        className='bg-cover bg-fixed bg-no-repeat bg-opacity-20 h-screen p-10' 
+        className='bg-cover bg-fixed bg-no-repeat bg-opacity-20 h-screen' 
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${hero})` }}>
 
           <div className='absolute md:bottom-44 md:right-36 2xl:bottom-80 2xl:right-80 text-white'>

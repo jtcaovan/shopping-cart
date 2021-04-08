@@ -5,7 +5,12 @@ function Shop() {
   return (
     <div className='relative'>
       <div className='fixed h-3/4 overflow-hidden'>
-        <img src={shop} alt='' />
+        <img className='' src={shop} alt='' />
+      </div>
+
+      <div>
+        <h1 className=''>Shop Now</h1>
+
       </div>
     </div>
     )
