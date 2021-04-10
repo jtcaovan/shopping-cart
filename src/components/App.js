@@ -17,7 +17,6 @@ function App() {
       <div 
         className='bg-cover bg-fixed bg-no-repeat bg-opacity-20 h-screen' 
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${hero})` }}>
-
           <div className='absolute md:bottom-44 md:right-36 2xl:bottom-80 2xl:right-80 text-white'>
             <p className='text-6xl mb-8'>
               Award Winning Plants, <br></br>Right to Your Doorstep
@@ -30,8 +29,7 @@ function App() {
       </div>
 
       <div id='contentContainer' className="relative min-h-0 h-auto">
-
-        <div className="h-full absolute bottom-1/4 inset-x-0">
+        <div className="h-full absolute inset-x-0">
           <ul className='flex justify-around pt-20 bg-white text-2xl'>
             <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>
               <img className='h-96 shadow-xl hover:shadow-2xl' src={monstera} alt=''/>
