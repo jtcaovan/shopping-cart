@@ -23,13 +23,18 @@ function Shop() {
           <div>
             <h1 className='text-4xl text-center'>All Plants</h1>
             <div className='p-6 flex'>
-              <p>Filter</p>
-
+              <p>Sort By</p>
             </div>
           </div>
-            <div className='grid grid-cols-3 gap-12'>
+            <div className='grid grid-cols-3 gap-x-6 gap-y-20'>
               {/* <img src={arecaPalm} alt=''/> */}
-              <img src={fern} alt=''/>
+              <div>
+                <img src={fern} alt=''/>
+                <div className='flex justify-between text-xl py-3'>
+                  <p>Fern</p>
+                  <p>$14.99</p>
+                </div>
+              </div>
               <img src={peaceLily} alt=''/>
               <img src={pothos} alt=''/>
               <img src={rubberTree} alt=''/>
