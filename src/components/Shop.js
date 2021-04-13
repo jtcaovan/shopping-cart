@@ -1,10 +1,20 @@
 import React from 'react'
 import fiddle from '../assets/fiddle.jpg'
-import arecaPalm from '../assets/shop/arecaPalm.jpg'
-import fern from '../assets/shop/fern.jpg'
-import peaceLily from '../assets/shop/peaceLily.jpg'
-import pothos from '../assets/shop/pothos.jpg'
-import rubberTree from '../assets/shop/rubberTree.jpg'
+import shopData from './ShopData'
+import ShopItems from './ShopItems'
+
+let plants = shopData.map(plant => 
+  <ShopItems 
+      key={plant.id}
+      name={plant.name} 
+      light={plant.light}
+      price={plant.price}
+      purify={plant.purify}
+      beginner={plant.beginner}
+      petFriendly={plant.petFriendly}
+      img={plant.img}
+  />
+  )
 
 function Shop() {
   return (
@@ -26,19 +36,10 @@ function Shop() {
               <p>Sort By</p>
             </div>
           </div>
-            <div className='grid grid-cols-3 gap-x-6 gap-y-20'>
-              {/* <img src={arecaPalm} alt=''/> */}
-              <div>
-                <img src={fern} alt=''/>
-                <div className='flex justify-between text-xl py-3'>
-                  <p>Fern</p>
-                  <p>$14.99</p>
-                </div>
-              </div>
-              <img src={peaceLily} alt=''/>
-              <img src={pothos} alt=''/>
-              <img src={rubberTree} alt=''/>
-            </div>
+
+          <div className='grid grid-cols-3 gap-x-6 gap-y-20'>
+            {plants}
+          </div>
       </div>
 
     </div>
