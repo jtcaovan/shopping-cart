@@ -31,7 +31,8 @@ function Shop() {
 
       <div className="absolute bg-white inset-x-0 w-screen p-10 z-10">
           <div>
-            <h1 className='text-4xl text-center'>All Plants</h1>
+            <h1 className='text-4xl text-center'>Bloom's Collection</h1>
+            <p className='text-center'>Shopping for plants has never been easier</p>
             <div className='p-6 flex'>
               <p>Sort By</p>
             </div>
