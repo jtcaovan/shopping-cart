@@ -4,7 +4,7 @@ import shopData from './ShopData'
 import ShopItems from './ShopItems'
 
 let plants = shopData.map(plant => 
-  <ShopItems 
+  <ShopItems className='hover:scale-105'
       key={plant.id}
       name={plant.name} 
       light={plant.light}
