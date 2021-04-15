@@ -1,15 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import pepperonia from '../assets/pepperonia.jpg'
-import window from '../assets/window.jpg'
-import succulents from '../assets/succulents.jpg'
-import work from '../assets/work.jpg'
-import pots from '../assets/pots.jpg'
-import collection2 from '../assets/collection2.jpg'
-import hero from '../assets/hero.jpg'
-import snake2 from '../assets/snake2.jpg'
-import collection from '../assets/collection.jpg'
-import monstera from '../assets/monstera.jpg'
+import pepperonia from 'assets/pepperonia.jpg'
+import window from 'assets/window.jpg'
+import work from 'assets/work.jpg'
+import pots from 'assets/pots.jpg'
+import collection2 from 'assets/collection2.jpg'
+import hero from 'assets/hero.jpg'
+import DisplayCards from './DisplayCards'
 
 function App() {
   return (
@@ -18,10 +15,10 @@ function App() {
         className='bg-cover bg-fixed bg-no-repeat h-screen' 
         style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${hero})` }}>
           <div className='absolute md:bottom-44 md:right-36 2xl:bottom-80 2xl:right-80 text-white'>
-            <p className='text-6xl mb-8'>
+            <p className='font-display text-6xl mb-8'>
               Award Winning Plants, <br></br>Right to Your Doorstep
             </p>
-            <p className='my-6 text-2xl'>Shop our curated collection of <br></br> plants and accessories</p>
+            <p className='font-body my-6 text-2xl'>Shop our curated collection of <br></br> plants and accessories</p>
             <Link to='./shop'>
               <button className='bg-red-500 text-2xl p-4 w-48'>Shop Now</button>
             </Link>
@@ -30,25 +27,7 @@ function App() {
 
       <div id='contentContainer' className="relative min-h-0 h-auto">
         <div className="h-full absolute inset-x-0">
-          <ul className='flex justify-around pt-20 bg-white text-2xl'>
-            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>
-              <img className='h-96 shadow-xl hover:shadow-2xl' src={monstera} alt=''/>
-                <p className='bg-opacity-30'>Best Sellers</p>
-            </li>
-            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>            
-              <img className='h-96 shadow-xl' src={snake2} alt=''/>
-              <p>Beginner Friendly</p>
-            </li>
-            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>
-              <img className='h-96 shadow-xl' src={collection} alt=''/>
-              <p>Shop our Curated Collection</p>
-            </li>
-            <li className='space-y-6 transform hover:scale-105 hover:text-red-500 duration-200'>
-              <img className='h-96 shadow-xl' src={succulents} alt=''/>
-              <p className=''>Shop Succulents</p>
-            </li>
-          </ul>
-
+          <DisplayCards />
 
           <div className='mt-24'>
             <div className='text-center space-y-6'>

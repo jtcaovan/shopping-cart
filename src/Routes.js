@@ -1,12 +1,12 @@
 import React from 'react'
-import './index.css'
+import 'index.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/Header'
-import App from './components/App'
-import About from './components/About'
-import Shop from './components/Shop'
-import Cart from './components/Cart'
-import Footer from './components/Footer'
+import Header from 'components/Nav/Header'
+import App from 'components/Home/App'
+import About from 'components/About/About'
+import Shop from 'components/Shop/Shop'
+import Cart from 'components/Cart'
+import Footer from 'components/Footer'
 
 const Routes = () => {
     return (

@@ -1,10 +1,10 @@
 import React from 'react'
-import fiddle from '../assets/fiddle.jpg'
+import fiddle from 'assets/fiddle.jpg'
 import shopData from './ShopData'
 import ShopItems from './ShopItems'
 
 let plants = shopData.map(plant => 
-  <ShopItems className='hover:scale-105'
+  <ShopItems
       key={plant.id}
       name={plant.name} 
       light={plant.light}
@@ -38,7 +38,7 @@ function Shop() {
             </div>
           </div>
 
-          <div className='grid grid-cols-3 gap-x-6 gap-y-20'>
+          <div className='grid grid-cols-3 mx-14 gap-x-12 gap-y-20'>
             {plants}
           </div>
       </div>

@@ -8,7 +8,7 @@ const Nav = () => {
                 <h1 className="m-auto pl-8 text-5xl">bloom</h1>
             </Link>
 
-            <ul className='flex space-x-6 m-auto text-lg'>
+            <ul className='flex space-x-6 m-auto font-display text-lg'>
                 <Link to='/about'>
                     <li>About</li>
                 </Link>
