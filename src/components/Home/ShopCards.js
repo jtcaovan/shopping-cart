@@ -4,27 +4,27 @@ import collection from 'assets/collection.jpg'
 import monstera from 'assets/monstera.jpg'
 import succulents from 'assets/succulents.jpg'
 
-function DisplayCards() {
+function ShopCards () {
     return(
         <ul className='flex justify-around pt-20 bg-white text-2xl'>
             <li className='space-y-6 cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
                 <img className='h-96 shadow-xl hover:shadow-2xl' src={monstera} alt=''/>
-                <p className='bg-opacity-30'>Best Sellers</p>
+                <p className='font-body'>Best Sellers</p>
             </li>
             <li className='space-y-6 cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>            
                 <img className='h-96 shadow-xl' src={snake2} alt=''/>
-                <p>Beginner Friendly</p>
+                <p className='font-body'>Beginner Friendly</p>
             </li>
             <li className='space-y-6 cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
                 <img className='h-96 shadow-xl' src={collection} alt=''/>
-                <p>Shop our Curated Collection</p>
+                <p className='font-body'>Shop our Curated Collection</p>
             </li>
             <li className='space-y-6 cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
                 <img className='h-96 shadow-xl' src={succulents} alt=''/>
-                <p className=''>Shop Succulents</p>
+                <p className='font-body'>Shop Succulents</p>
             </li>
       </ul>
     )
 }
 
-export default DisplayCards
+export default ShopCards 
