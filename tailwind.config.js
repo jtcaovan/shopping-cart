@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'display': ['Lato'],
+      'display': ['Montserrat'],
       'body': ['Raleway'],
     },
     extend: {},
@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       brightness: ['hover'],
       contrast: ['hover'],
+      fontWeight: ['hover'],
     },
   },
   plugins: [],

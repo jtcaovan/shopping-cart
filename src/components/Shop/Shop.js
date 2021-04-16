@@ -24,15 +24,15 @@ function Shop() {
           <div className='bg-cover bg-fixed bg-no-repeat h-full' 
           style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${fiddle})` }}>
           {/* <img src={shop} alt='' /> */}
-          <h1 className='absolute top-1/2 left-1/2 inset-0 text-white text-5xl m-auto z-10'>A Plant for Every Space</h1>
+          <h1 className='absolute top-1/2 left-1/2 inset-0 font-display text-white text-5xl m-auto z-10'>A Plant for Every Space</h1>
           </div>
         </div>
       </div>
 
       <div className="absolute bg-white inset-x-0 w-screen p-10 z-10">
           <div>
-            <h1 className='text-4xl text-center'>Bloom's Collection</h1>
-            <p className='text-center'>Shopping for plants has never been easier</p>
+            <h1 className='font-display text-4xl text-center'>Bloom's Collection</h1>
+            <p className='font-body text-center'>Shopping for plants has never been easier</p>
             <div className='p-6 flex'>
               <p>Sort By</p>
             </div>

@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom'
 
 const Nav = () => {
   return (
-        <nav className='flex h-16 w-full text-white hover:bg-white hover:text-black'> 
+        <nav className='flex h-18 py-4 w-full m-auto text-white'> 
             <Link to='/'>
-                <h1 className="m-auto pl-8 text-5xl">bloom</h1>
+                <h1 className="transform duration-300 hover:-translate-y-1 font-display font-thin tracking-wide m-auto pl-12 text-5xl">bloom</h1>
             </Link>
 
-            <ul className='flex space-x-6 m-auto font-display text-lg'>
+            <ul className='flex justify-end items-end pr-24 w-full space-x-12 font-display font-light text-xl'>
                 <Link to='/about'>
-                    <li>About</li>
+                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal'>About</li>
                 </Link>
                 <Link to='/shop'>
-                    <li>Shop</li>
+                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal'>Shop</li>
                 </Link>
                 <Link to='/cart'>
-                    <li>Cart</li>
+                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal'>Cart</li>
                 </Link>
             </ul>
         </nav>
