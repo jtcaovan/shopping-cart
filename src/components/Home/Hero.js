@@ -12,7 +12,7 @@ function Hero() {
             <p className='font-display text-5xl mb-8 break-words'>
               Beautiful plants <br></br> Right to your Doorstep
             </p>
-            <p className='font-body font-light my-6 text-3xl'>Shopping for Plants Has Never Been Easier</p>
+            <p className='font-body font-light my-6 text-2xl'>Shopping for Plants Has Never Been Easier</p>
             <Link to='./shop'>
               <button className='bg-red-500 font-body rounded-md text-2xl p-4 w-48 transform duration-200 hover:-translate-y-1 hover:bg-red-600 '>Shop Now</button>
             </Link>

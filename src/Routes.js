@@ -5,8 +5,8 @@ import Header from 'components/Nav/Header'
 import App from 'components/Home/App'
 import About from 'components/About/About'
 import Shop from 'components/Shop/Shop'
-import Cart from 'components/Cart'
-import Footer from 'components/Footer'
+import Cart from 'components/Cart/Cart'
+import Footer from 'components/Footer/Footer'
 
 const Routes = () => {
     return (
@@ -18,7 +18,7 @@ const Routes = () => {
                 <Route exact path='/shop' component={Shop} />
                 <Route exact path='/cart' component={Cart} />
             </Switch>
-            {/* <Footer /> */}
+            <Footer />
         </Router>
     )
 }
