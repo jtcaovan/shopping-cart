@@ -7,9 +7,9 @@ import Footer from 'components/Footer/Footer'
 
 function App() {
   return (
-    <div className='relative'>
+    <div className='h-screen'>
       <Hero />
-      <div id='contentContainer' className="relative min-h-0 h-auto">
+      <div className="relative min-h-0 h-auto">
           <div className="h-full absolute -top-28 inset-x-0">
             <ShopCards />
             <TextCards />

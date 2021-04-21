@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -32,9 +31,10 @@ function Footer() {
                     <p className='font-body text-gray-700'>Air Purifying</p>
                     <p className='font-body text-gray-700'>Pet Friendly</p>
                     <p className='font-body text-gray-700'>Beginner Friendly</p>
+                    <p className='font-body text-gray-700'>Succulents</p>
                 </div>
                 <div className='flex flex-col space-y-4'>
-                    <h1 className='font-display font-medium text-lg text-gray-900'>Contact Us</h1>
+                    <h1 className='font-display font-medium text-lg text-gray-900'>Contact</h1>
                     <p className='font-body text-gray-700'>jtcaovan@gmail.com</p>
                     <div className='flex space-x-6'>
                         <FontAwesomeIcon className='text-2xl text-gray-700 hover:text-gray-900' icon={ faGithub } />

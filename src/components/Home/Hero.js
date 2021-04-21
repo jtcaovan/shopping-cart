@@ -10,7 +10,7 @@ function Hero() {
               
           <div className='absolute md:bottom-44 md:right-36 2xl:bottom-80 2xl:right-80 text-white'>
             <p className='font-display text-5xl mb-8 break-words'>
-              Beautiful plants <br></br> Right to your Doorstep
+              Beautiful Plants <br></br> Right to your Doorstep
             </p>
             <p className='font-body font-light my-6 text-2xl'>Shopping for Plants Has Never Been Easier</p>
             <Link to='./shop'>
