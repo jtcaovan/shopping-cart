@@ -1,28 +1,45 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
     return(
-        <footer className='bg-gray-200 bg-opacity-40 w-full my-20 py-12'>
+        <footer className='bg-gray-200 bg-opacity-40 w-full my-20 pt-8 pb-28'>
             <div className='flex justify-center p-6 space-x-24 '>
-                <div>
-                    <h1 className='text-2xl'>Join the Bloom Family</h1>
-                    <input type='text' className='bg-white text-lg w-42 p-2' placeHolder='Enter Your Email...'></input>
-                    <button className='bg-red-500 text-white font-body rounded-md text-lg p-2 w-38 transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Subscribe</button>
+                <div className='mr-10'>
+                    <h1 className='font-display font-medium text-2xl text-gray-900'>Join the Bloom Family</h1>
+                    <p className='font-body py-4 w-72 text-gray-700'>Get plant care tips and tricks delivered straight to your mailbox.</p>
+                    <div className='flex mt-6'>
+                        <input className='h-12 p-4 rounded-l font-body bg-gray-100 border-gray-400 border' 
+                            type='text' 
+                            placeholder='Enter Your Email...'></input>
+                        <button className='h-12 p-4 w-28 font-body text-sm bg-gray-900 text-white rounded-r
+                            transition duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'>
+                            Subscribe
+                        </button>
+                    </div>
                 </div>
 
                 <div className='flex flex-col space-y-4'>
-                    <h1 className='text-2xl'>Bloom</h1>
-                    <p>About Us</p>
-                    <p>FAQ</p>
+                    <h1 className='font-display font-medium text-lg text-gray-900'>Bloom</h1>
+                    <p className='font-body text-gray-700'>About Us</p>
+                    <p className='font-body text-gray-700'>FAQ</p>
                 </div>       
                 <div className='flex flex-col space-y-4'>
-                    <h1 className='text-2xl'>Shop</h1>
-                    <p>Air Purifying</p>
-                    <p>Pet Friendly</p>
-                    <p>Beginner Friendly</p>
+                    <h1 className='font-display font-medium text-lg text-gray-900'>Shop</h1>
+                    <p className='font-body text-gray-700'>Air Purifying</p>
+                    <p className='font-body text-gray-700'>Pet Friendly</p>
+                    <p className='font-body text-gray-700'>Beginner Friendly</p>
                 </div>
                 <div className='flex flex-col space-y-4'>
-                    <h1 className='text-2xl'>Follow Us</h1>
+                    <h1 className='font-display font-medium text-lg text-gray-900'>Contact Us</h1>
+                    <p className='font-body text-gray-700'>jtcaovan@gmail.com</p>
+                    <div className='flex space-x-6'>
+                        <FontAwesomeIcon className='text-2xl text-gray-700 hover:text-gray-900' icon={ faGithub } />
+                        <FontAwesomeIcon className='text-2xl text-gray-700 hover:text-gray-900' icon={ faLinkedin } />
+                    </div>
                 </div>
             </div>
         </footer>
