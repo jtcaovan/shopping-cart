@@ -6,8 +6,8 @@ function Footer() {
             <div className='flex justify-center p-6 space-x-24 '>
                 <div>
                     <h1 className='text-2xl'>Join the Bloom Family</h1>
-                    <text>Enter your email...</text>
-                    <button className='bg-red-500 font-body rounded-md text-lg p-2 w-38 transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Subscribe</button>
+                    <input type='text' className='bg-white text-lg w-42 p-2' placeHolder='Enter Your Email...'></input>
+                    <button className='bg-red-500 text-white font-body rounded-md text-lg p-2 w-38 transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Subscribe</button>
                 </div>
 
                 <div className='flex flex-col space-y-4'>

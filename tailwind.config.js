@@ -13,7 +13,7 @@ module.exports = {
       brightness: ['hover'],
       contrast: ['hover'],
       fontWeight: ['hover'],
-      borderWidth: ['active'],
+      borderWidth: ['hover, active'],
     },
   },
   plugins: [],

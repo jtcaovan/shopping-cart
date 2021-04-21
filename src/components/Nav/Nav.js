@@ -10,13 +10,13 @@ const Nav = () => {
 
             <ul className='flex justify-end items-end pr-24 w-full space-x-12 font-display font-light text-xl'>
                 <Link to='/about'>
-                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal'>About</li>
+                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal hover:border-b-2 border-red-500'>About</li>
                 </Link>
                 <Link to='/shop'>
-                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal'>Shop</li>
+                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal hover:border-b-2 border-red-500'>Shop</li>
                 </Link>
                 <Link to='/cart'>
-                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal'>Cart</li>
+                    <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal hover:border-b-2 border-red-500'>Cart</li>
                 </Link>
             </ul>
         </nav>
