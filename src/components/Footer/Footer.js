@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -22,12 +23,18 @@ function Footer() {
                 </div>
 
                 <div className='flex flex-col space-y-4'>
-                    <h1 className='font-display font-medium text-lg text-gray-900'>Bloom</h1>
-                    <p className='font-body text-gray-700'>About Us</p>
-                    <p className='font-body text-gray-700'>FAQ</p>
+                    <Link to='/'>
+                        <h1 className='font-display font-medium text-lg text-gray-900'>Bloom</h1>
+                    </Link>
+                    <Link to='/about'>
+                        <p className='font-body text-gray-700'>About Us</p>
+                        <p className='font-body text-gray-700'>FAQ</p>
+                    </Link>
                 </div>       
                 <div className='flex flex-col space-y-4'>
-                    <h1 className='font-display font-medium text-lg text-gray-900'>Shop</h1>
+                    <Link to='/shop'>
+                        <h1 className='font-display font-medium text-lg text-gray-900'>Shop</h1>
+                    </Link>
                     <p className='font-body text-gray-700'>Air Purifying</p>
                     <p className='font-body text-gray-700'>Pet Friendly</p>
                     <p className='font-body text-gray-700'>Beginner Friendly</p>

@@ -6,6 +6,7 @@ import App from 'components/Home/App'
 import About from 'components/About/About'
 import Shop from 'components/Shop/Shop'
 import Cart from 'components/Cart/Cart'
+import ItemDetail from 'components/Shop/ItemDetail';
 // import Footer from 'components/Footer/Footer'
 
 const Routes = () => {
@@ -16,9 +17,9 @@ const Routes = () => {
                 <Route exact path='/' component={App} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/shop' component={Shop} />
+                <Route exact path='/shop/:name' component={ItemDetail} />
                 <Route exact path='/cart' component={Cart} />
             </Switch>
-            {/* <Footer /> */}
         </Router>
     )
 }
