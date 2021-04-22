@@ -24,7 +24,7 @@ function Shop() {
       <ShopHero />      
           <div className='h-full'>
             <ShopNav />
-            <div className='grid grid-cols-3 mx-28 gap-x-16 gap-y-20'>
+            <div className='grid grid-cols-3 mx-8 gap-x-8 gap-y-12'>
                 {plants}
             </div>
             <Footer />

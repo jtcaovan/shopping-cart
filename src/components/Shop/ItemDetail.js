@@ -7,12 +7,15 @@ function ItemDetail() {
     let { name } = useParams();
     let plant = itemData.find(item => name === item.name)
 
-    console.log(plant)
     return(
-        <div className='relative'>
-            <h1>Name: {plant.name}</h1>
-            <p>{plant.light}</p>
-            <img src={plant.img} alt=''/>
+        <div className='h-screen bg-gray-300 bg-opacity-50'>
+            <div className='h-1/2 flex'>
+                <img className='' src={plant.img} alt=''/>
+                <div>
+                    <h1>Name: {plant.name}</h1>
+                    <p>{plant.light}</p>
+                </div>
+            </div>
         </div>
     )
 }
