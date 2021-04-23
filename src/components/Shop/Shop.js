@@ -1,6 +1,7 @@
 import React from 'react'
 import itemData from './ItemData'
 import ItemDisplay from './ItemDisplay'
+import Nav from 'components/Nav/Header'
 import Footer from 'components/Footer/Footer'
 import ShopHero from 'components/Shop/ShopHero'
 import ShopNav from 'components/Shop/ShopNav'
@@ -21,6 +22,7 @@ let plants = itemData.map(plant =>
 function Shop() {
   return (
     <div className='h-screen'>
+      <Nav />
       <ShopHero />      
           <div className='h-full'>
             <ShopNav />

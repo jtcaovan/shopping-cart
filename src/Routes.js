@@ -1,18 +1,15 @@
 import React from 'react'
 import 'index.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from 'components/Nav/Header'
 import App from 'components/Home/App'
 import About from 'components/About/About'
 import Shop from 'components/Shop/Shop'
 import Cart from 'components/Cart/Cart'
 import ItemDetail from 'components/Shop/ItemDetail';
-// import Footer from 'components/Footer/Footer'
 
 const Routes = () => {
     return (
         <Router>
-            <Header />
             <Switch>
                 <Route exact path='/' component={App} />
                 <Route exact path='/about' component={About} />

@@ -1,11 +1,11 @@
 import Banner from './Banner'
-import Nav from './Nav'
+import ItemNav from './ItemNav'
 
 function Header() {
     return (
-        <div className='absolute w-full'>
+        <div>
             <Banner />
-            <Nav />
+            <ItemNav />
         </div>
     )
 }
