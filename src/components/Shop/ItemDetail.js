@@ -39,32 +39,37 @@ function ItemDetail() {
                         </div>
 
                         <div>
-                            <h2 className='font-body'>Ceramic Pot Color</h2>
+                            <h2 className='font-body font-semibold'>Ceramic Pot Color</h2>
+                            <div className='mt-4 mb-2 bg-gray-200 ring-2 ring-gray-700 w-8 h-8 rounded-full cursor-pointer'></div>
+                            <p className='font-body text-sm'>White</p>
                         </div>
 
                         <div className='mt-6'>
-                            <h2 className='font-body'>Details</h2>
-                            <div className='font-body'><FontAwesomeIcon icon={ faSun }/> {plant.light}</div>
-                            <div>
-                                {plant.purify && 
-                                <div className='flex'>
-                                    <FontAwesomeIcon icon={ faWind } />
-                                    <p className='font-body'>Air Purifying</p>
-                                </div>}
-                            </div>
-                            <div>
-                                {plant.beginner && 
-                                <div className='flex'>
-                                    <FontAwesomeIcon icon={ faSeedling } />
-                                    <p className='font-body'>Beginner Friendly</p>
-                                </div>}
-                            </div>
-                            <div>
-                                {plant.petFriendly && 
-                                <div className='flex'>
-                                    <FontAwesomeIcon icon={ faPaw } />
-                                    <p className='font-body'>Pet Friendly</p>
-                                </div>}
+                            <h2 className='font-body font-semibold'>Details</h2>
+
+                            <div className='flex flex-col mt-2 space-y-2'>
+                                <div className='font-body'><FontAwesomeIcon icon={ faSun }/> {plant.light}</div>
+                                <div>
+                                    {plant.beginner && 
+                                    <div className='flex'>
+                                        <FontAwesomeIcon icon={ faSeedling } />
+                                        <p className='font-body'>Beginner Friendly</p>
+                                    </div>}
+                                </div>
+                                <div>
+                                    {plant.purify && 
+                                    <div className='flex'>
+                                        <FontAwesomeIcon icon={ faWind } />
+                                        <p className='font-body'>Air Purifying</p>
+                                    </div>}
+                                </div>
+                                <div>
+                                    {plant.petFriendly && 
+                                    <div className='flex'>
+                                        <FontAwesomeIcon icon={ faPaw } />
+                                        <p className='font-body'>Pet Friendly</p>
+                                    </div>}
+                                </div>
                             </div>
                         </div>
 
