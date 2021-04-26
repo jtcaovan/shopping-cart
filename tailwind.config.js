@@ -14,6 +14,8 @@ module.exports = {
       contrast: ['hover'],
       fontWeight: ['hover'],
       borderWidth: ['hover, active'],
+      backgroundColor: ['active'],
+      outline: ['focus']
     },
   },
   plugins: [],

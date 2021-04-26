@@ -148,7 +148,7 @@ let shopData = [
     {
         id: 14,
         name: "Succulent Trio",
-        light: 'LMedium Light',
+        light: 'Medium Light',
         price: "$14.99",
         purify: false,
         beginner: true,
