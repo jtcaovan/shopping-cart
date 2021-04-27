@@ -8,7 +8,7 @@ const ItemNav = () => {
                 <h1 className="transform duration-300 hover:-translate-y-1 font-display font-thin tracking-wide m-auto pl-12 text-5xl">bloom</h1>
             </Link>
 
-            <ul className='flex justify-end items-end pr-24 w-full space-x-12 font-display font-light text-xl'>
+            <ul className='flex justify-end text-gray-700 items-end pr-24 w-full space-x-12 font-display'>
                 <Link to='/about'>
                     <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal border-red-500 hover:border-b-2'>About</li>
                 </Link>

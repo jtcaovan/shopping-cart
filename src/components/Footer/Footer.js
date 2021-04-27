@@ -26,9 +26,9 @@ function Footer() {
                     <Link to='/'>
                         <h1 className='font-display font-medium text-lg text-gray-900'>Bloom</h1>
                     </Link>
-                    <Link to='/about'>
-                        <p className='font-body text-gray-700'>About Us</p>
-                        <p className='font-body text-gray-700'>FAQ</p>
+                    <Link className='font-body text-gray-700' to='/about'>
+                        <p>About Us</p>
+                        <p>FAQ</p>
                     </Link>
                 </div>       
                 <div className='flex flex-col space-y-4'>

@@ -10,12 +10,13 @@ import ItemDetail from 'components/Shop/ItemDetail';
 const Routes = () => {
     return (
         <Router>
+            <Cart />
             <Switch>
                 <Route exact path='/' component={App} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/shop' component={Shop} />
                 <Route exact path='/shop/:name' component={ItemDetail} />
-                <Route exact path='/cart' component={Cart} />
+                {/* <Route exact path='/cart' component={Cart} /> */}
             </Switch>
         </Router>
     )
