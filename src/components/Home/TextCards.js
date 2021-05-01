@@ -1,6 +1,7 @@
 import React from 'react'
 import window from 'assets/window.jpg'
 import work from 'assets/work.jpg'
+import { Link } from 'react-router-dom'
 
 function TextCards() {
     return(
@@ -14,8 +15,10 @@ function TextCards() {
                         plants is an easy and inexpensive way to bring
                         the most boring rooms to life.  
                     </p>
-                    <button className='bg-red-500 font-body rounded-md text-white text-xl p-4 w-48
-                     transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Now</button>
+                    <Link to='/shop'>
+                        <button className='bg-red-500 font-body rounded-md text-white text-xl p-4 w-48
+                        transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Now</button>
+                    </Link>
                 </div>
 
                 <div >
