@@ -15,6 +15,9 @@ const Routes = () => {
                 <Route exact path='/' component={App} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/shop' component={Shop} />
+                {/* <Route exact path='/shop:beginnerfriendly' component={} />
+                <Route exact path='/shop:airpurify' component={} />
+                <Route exact path='/shop:petfriendly' component={} /> */}
                 <Route exact path='/shop/:name' component={ItemDetail} />
                 {/* <Route exact path='/cart' component={Cart} /> */}
             </Switch>
