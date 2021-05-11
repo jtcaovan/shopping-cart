@@ -5,7 +5,7 @@ const Cart = () => {
 
   return (
     <div className={open}>
-      <div className='relative'>
+      <div className='relative overflow-hidden'>
         <div className='absolute inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'>
           <div className='absolute inset-y-0 right-0 h-screen w-1/3 bg-white z-10'>
             <div className='m-6 flex justify-between'>
