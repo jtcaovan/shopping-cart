@@ -12,7 +12,7 @@ function Footer() {
                     <h1 className='font-display font-medium text-2xl text-gray-900'>Join the Bloom Family</h1>
                     <p className='font-body py-4 w-72 text-gray-700'>Get plant care tips and tricks delivered straight to your mailbox.</p>
                     <div className='flex mt-6'>
-                        <input className='h-12 p-4 rounded-l font-body bg-gray-100 border-gray-400 border' 
+                        <input className='h-12 p-4 rounded-l font-body bg-gray-100 border-gray-400 border hover:border-gray-700 focus:border-gray-700 focus: border-2 focus:outline-none' 
                             type='text' 
                             placeholder='Enter Your Email...'></input>
                         <button className='h-12 p-4 w-28 font-body text-sm bg-gray-900 text-white rounded-r
