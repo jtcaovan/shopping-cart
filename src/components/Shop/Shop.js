@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSelector } from "react-redux"
-// import itemData from './ItemData'
 import ItemDisplay from './ItemDisplay'
 import Nav from 'components/Nav/Header'
 import Footer from 'components/Footer/Footer'

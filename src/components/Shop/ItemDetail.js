@@ -17,12 +17,16 @@ function ItemDetail() {
     let { name } = useParams();
     let plant = itemData.find(item => name === item.name)
 
+    // const handleClick = (id) => {
+    //     console.log(id)
+    // }
+
     return(
         <div>
             <Nav />
             <div className='h-screen'>
                 <div className='h-4/5 w-10/12 my-12 mx-auto flex space-x-24 justify-between '>
-                    <img className='' src={plant.img} alt=''/>
+                    <img src={plant.img} alt=''/>
 
                     <div className='w-2/5 flex-col divide-y-2 space-y-8'>
                         <div className='space-y-8'>
@@ -82,7 +86,9 @@ function ItemDetail() {
                                 </div>
                             </div>
 
-                            <button className='w-full h-12 my-4 p-4 font-body text-sm bg-gray-900 bg-opacity-70 text-white rounded
+                            <button
+                                onClick={console.log(plant.id)}
+                                className='w-full h-12 my-4 p-4 font-body text-sm bg-gray-900 bg-opacity-70 text-white rounded
                                 transition duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border active:bg-gray-100 focus:outline-none'>Add to Cart
                             </button>
 
