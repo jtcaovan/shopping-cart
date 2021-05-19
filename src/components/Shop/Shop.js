@@ -1,25 +1,29 @@
 import React from 'react'
-import itemData from './ItemData'
+import { useSelector } from "react-redux"
+// import itemData from './ItemData'
 import ItemDisplay from './ItemDisplay'
 import Nav from 'components/Nav/Header'
 import Footer from 'components/Footer/Footer'
 import ShopHero from 'components/Shop/ShopHero'
 import ShopNav from 'components/Shop/ShopNav'
 
-let plants = itemData.map(plant => 
-    <ItemDisplay
-        key={plant.id}
-        name={plant.name} 
-        light={plant.light}
-        price={plant.price}
-        purify={plant.purify}
-        beginner={plant.beginner}
-        petFriendly={plant.petFriendly}
-        img={plant.img}
-    />
-  )
+
 
 function Shop() {
+  const products = useSelector(state=> state.products)
+
+  let plants = products.map(plant => 
+    <ItemDisplay
+    key={plant.id}
+    name={plant.name} 
+    light={plant.light}
+    price={plant.price}
+    purify={plant.purify}
+    beginner={plant.beginner}
+    petFriendly={plant.petFriendly}
+    img={plant.img}
+    />)
+
   return (
     <div className='h-screen'>
       <Nav />
