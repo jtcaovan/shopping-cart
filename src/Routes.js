@@ -2,7 +2,7 @@ import React from 'react'
 import 'index.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux'
-import store from 'reducers/cartReducer'
+import store from './store'
 import App from 'components/Home/Home'
 import About from 'components/About/About'
 import Shop from 'components/Shop/Shop'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSelector } from "react-redux"
+import { useSelector } from 'react-redux'
 import ItemDisplay from './ItemDisplay'
 import Nav from 'components/Nav/Header'
 import Footer from 'components/Footer/Footer'
@@ -9,7 +9,7 @@ import ShopNav from 'components/Shop/ShopNav'
 
 
 function Shop() {
-  const products = useSelector(state=> state.products)
+  const products = useSelector(state=> state.cart.products)
 
   let plants = products.map(plant => 
     <ItemDisplay
