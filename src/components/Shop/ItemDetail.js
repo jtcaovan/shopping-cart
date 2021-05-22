@@ -1,7 +1,9 @@
 import React from 'react'
 import Nav from 'components/Nav/ItemHeader'
 import { useParams } from 'react-router-dom'
-import itemData from './ItemData'
+import { useSelector, useDispatch } from 'react-redux'
+import { addToCart } from '../Cart/cartSlice'
+
 import Footer from 'components/Footer/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaw }  from '@fortawesome/free-solid-svg-icons'
@@ -13,13 +15,17 @@ import { faStar }  from '@fortawesome/free-solid-svg-icons'
 
 
 function ItemDetail() {
-
-    let { name } = useParams();
-    let plant = itemData.find(item => name === item.name)
+    const products = useSelector((state) => state.cart.products)
+    // const cart = useSelector((state) => state.cart.addedIds)
+    const dispatch = useDispatch()
+    let { name } = useParams()
+    
+    let plant = products.find(item => name === item.name)
 
     function handleClick() {
-        console.log(plant.id)
+        dispatch(addToCart(plant))
     }
+
     return (
         <div>
             <Nav />
@@ -88,7 +94,8 @@ function ItemDetail() {
                             <button
                                 onClick={handleClick}
                                 className='w-full h-12 my-4 p-4 font-body text-sm bg-gray-900 bg-opacity-70 text-white rounded
-                                transition duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border active:bg-gray-100 focus:outline-none'>Add to Cart
+                                transition duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border active:bg-gray-100 focus:outline-none'>
+                                    Add to Cart
                             </button>
 
                             <div className='flex justify-around mt-2'>
