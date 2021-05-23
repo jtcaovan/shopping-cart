@@ -13,7 +13,6 @@ import { faWind }  from '@fortawesome/free-solid-svg-icons'
 import { faStar }  from '@fortawesome/free-solid-svg-icons'
 
 
-
 function ItemDetail() {
     const products = useSelector((state) => state.cart.products)
     // const cart = useSelector((state) => state.cart.addedIds)

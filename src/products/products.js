@@ -14,7 +14,7 @@ import satinPothos from 'assets/shop/satinPothos.jpg'
 import succulentTrio from 'assets/shop/succulentTrio.jpg'
 import cactusTrio from 'assets/shop/cactusTrio.jpg'
 
-let shopData = [
+let products = [
     {
         id: 1,
         name: "Crispy Wave Fern",
@@ -168,4 +168,4 @@ let shopData = [
     
 ]
 
-export default shopData
+export default products

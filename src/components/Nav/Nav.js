@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { displayCart } from '../Cart/cartSlice'
 
 const Nav = () => {
+    const dispatch = useDispatch()
 
     return (
         <nav className='flex h-18 py-4 w-full m-auto text-white'> 
@@ -17,12 +20,27 @@ const Nav = () => {
                     <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal border-red-500 hover:border-b-2'>Shop</li>
                 </Link>
 
-                <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal border-red-500 hover:border-b-2'> Cart
+                <li 
+                    onClick = {() => dispatch(displayCart())}
+                    className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 
+                    hover:font-normal border-red-500 hover:border-b-2'
+                >
+                    Cart
                 </li>
             </ul>
-
         </nav>
   );
 };
+// state = { hidden: true,       cartItems:[]};
+// }
+// toggleHidden() {
+//   this.setState(() => ({ hidden: !this.state.hidden }));
+// }
 
+
+// {hidden ? null : (
+//     <CartDropdown
+//       toggle={this.toggleHidden}
+//       cartItems={this.state.cartItems}
+//     ></CartDropdown>
 export default Nav;

@@ -6,7 +6,7 @@ import ShopCards from './ShopCards'
 import CircleCards from './CircleCards'
 import Footer from 'components/Footer/Footer'
 
-function App() {
+function Home() {
   return (
     <div className='h-screen'>
       <Nav />
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
