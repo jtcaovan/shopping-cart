@@ -37,5 +37,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-// onClick={() => setDisplayCart('hidden')} 

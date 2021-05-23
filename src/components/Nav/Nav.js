@@ -31,16 +31,5 @@ const Nav = () => {
         </nav>
   );
 };
-// state = { hidden: true,       cartItems:[]};
-// }
-// toggleHidden() {
-//   this.setState(() => ({ hidden: !this.state.hidden }));
-// }
 
-
-// {hidden ? null : (
-//     <CartDropdown
-//       toggle={this.toggleHidden}
-//       cartItems={this.state.cartItems}
-//     ></CartDropdown>
 export default Nav;
