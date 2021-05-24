@@ -1,4 +1,5 @@
 import React from "react";
+import CartDisplay from './CartDisplay'
 import { useSelector, useDispatch } from "react-redux";
 import { hideCart } from '../Cart/cartSlice'
 
@@ -25,10 +26,19 @@ const Cart = () => {
               />
             </svg>
           </div>
+
+          {/* If addedIds = 0 ? display empty state : CartDisplay */}
+          <CartDisplay />
           <div className='absolute font-body inset-y-1/2 inset-x-1/3 w-full h-24'>
             <p>Your cart is empty!</p>
-            <button className='h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded-r transition duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'>
-            Shop Now</button>          
+            <button 
+              className='h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded-r transition 
+              duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'
+            >
+            Shop Now
+            </button>   
+
+
           </div>
         </div>
       </div>
