@@ -22,7 +22,7 @@ const Nav = () => {
 
                 <li 
                     onClick = {() => dispatch(displayCart())}
-                    className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 
+                    className='flex transition duration-300 transform hover:-translate-y-1 hover:text-red-500 
                     hover:font-normal border-red-500 hover:border-b-2'
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -2,12 +2,14 @@ import React from 'react'
 
 function CartDisplay(props) {
 
+    console.log(props)
     return (
         <div className='relative flex space-x-4'>
             <img 
-                className='h-32 w-32'
+                className='h-12 w-12'
                 src={props.img} alt=''/>
-            <div>
+            <div className='flex'>
+                <p>{props.id}</p>
                 <p>{props.name}</p>
                 <p>{props.price}</p>
             </div>

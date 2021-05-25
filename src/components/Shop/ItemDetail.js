@@ -3,6 +3,7 @@ import Nav from 'components/Nav/ItemHeader'
 import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart } from '../Cart/cartSlice'
+import { displayCart } from '../Cart/cartSlice'
 
 import Footer from 'components/Footer/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,7 +24,7 @@ function ItemDetail() {
 
     function handleClick() {
         dispatch(addToCart(plant))
-        console.log(cart)
+        dispatch(displayCart())
     }
 
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import CartDisplay from './CartDisplay'
 import { useSelector, useDispatch } from "react-redux";
-import { hideCart } from '../Cart/cartSlice'
+import { displayCart, hideCart } from '../Cart/cartSlice'
 
 const Cart = () => {
   const display = useSelector((state) => state.cart.display)
@@ -10,7 +10,7 @@ const Cart = () => {
 
   let cart = cartItems.map(item => 
     <CartDisplay 
-        key={item.id}
+        id={item.id}
         name={item.name} 
         price={item.price}
         img={item.img}
@@ -27,7 +27,7 @@ const Cart = () => {
         </div>
         <div className='absolute text-black inset-y-0 right-0 h-screen w-1/3 bg-white z-10'>
           <div className='m-6 flex justify-between'>
-            <p className='text-4xl font-display'>Cart <span className='text-lg'>(0 items)</span></p>
+            <p className='text-4xl font-display'>Cart <span className='text-lg'>({cartItems.length} items)</span></p>
               <svg 
                 onClick={() => dispatch(hideCart())} 
                 className="h-6 w-6" 

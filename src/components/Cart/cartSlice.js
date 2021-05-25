@@ -18,6 +18,9 @@ export const cartSlice = createSlice({
         },
         hideCart: (state) => {
             state.display = 'hidden'
+        },
+        addQuantity: (state) => {
+            // plant.id || 0 + 1
         }
     }
 })
