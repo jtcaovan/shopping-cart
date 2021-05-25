@@ -15,7 +15,7 @@ import { faStar }  from '@fortawesome/free-solid-svg-icons'
 
 function ItemDetail() {
     const products = useSelector((state) => state.cart.products)
-    // const cart = useSelector((state) => state.cart.addedIds)
+    const cart = useSelector((state) => state.cart.addedIds)
     const dispatch = useDispatch()
     let { name } = useParams()
     
@@ -23,6 +23,7 @@ function ItemDetail() {
 
     function handleClick() {
         dispatch(addToCart(plant))
+        console.log(cart)
     }
 
     return (

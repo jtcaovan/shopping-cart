@@ -13,14 +13,14 @@ function Shop() {
 
   let plants = products.map(plant => 
     <ItemDisplay
-    key={plant.id}
-    name={plant.name} 
-    light={plant.light}
-    price={plant.price}
-    purify={plant.purify}
-    beginner={plant.beginner}
-    petFriendly={plant.petFriendly}
-    img={plant.img}
+      key={plant.id}
+      name={plant.name} 
+      light={plant.light}
+      price={plant.price}
+      purify={plant.purify}
+      beginner={plant.beginner}
+      petFriendly={plant.petFriendly}
+      img={plant.img}
     />)
 
   return (

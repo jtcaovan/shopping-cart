@@ -44,8 +44,12 @@ function Footer() {
                     <h1 className='font-display font-medium text-lg text-gray-900'>Contact</h1>
                     <p className='font-body text-gray-700'>jtcaovan@gmail.com</p>
                     <div className='flex space-x-6'>
-                        <a href='https://github.com/jtcaovan' target='_blank rel="noopener noreferrer"'><FontAwesomeIcon className='text-2xl text-gray-700 hover:text-gray-900' icon={ faGithub } /> </a>
-                        <a href='https://www.linkedin.com/in/justincaovan/' target='_blank rel="noopener noreferrer"'><FontAwesomeIcon className='text-2xl text-gray-700 hover:text-gray-900' icon={ faLinkedin }/> </a>
+                        <a href='https://github.com/jtcaovan' target='_blank rel="noopener noreferrer"'>
+                            <FontAwesomeIcon className='text-2xl text-gray-700 hover:text-gray-900' icon={ faGithub } /> 
+                        </a>
+                        <a href='https://www.linkedin.com/in/justincaovan/' target='_blank rel="noopener noreferrer"'>
+                            <FontAwesomeIcon className='text-2xl text-gray-700 hover:text-gray-900' icon={ faLinkedin }/> 
+                        </a>
                 </div>
             </div>
             </div>
