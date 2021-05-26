@@ -2,8 +2,7 @@ import React from 'react'
 import Nav from 'components/Nav/ItemHeader'
 import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { addToCart } from '../Cart/cartSlice'
-import { displayCart } from '../Cart/cartSlice'
+import { addToCart, displayCart, addQuantity } from '../Cart/cartSlice'
 
 import Footer from 'components/Footer/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,15 +15,19 @@ import { faStar }  from '@fortawesome/free-solid-svg-icons'
 
 function ItemDetail() {
     const products = useSelector((state) => state.cart.products)
-    const cart = useSelector((state) => state.cart.addedIds)
+    const cart = useSelector((state) => state.cart.quantityById)
     const dispatch = useDispatch()
     let { name } = useParams()
     
     let plant = products.find(item => name === item.name)
 
     function handleClick() {
+        // cart !== plant ? dispatch(addToCart(plant)) : dispatch(addQuantity(plant.id))
+
         dispatch(addToCart(plant))
-        dispatch(displayCart())
+        console.log(cart)
+        dispatch(addQuantity(plant.id))
+        dispatch(displayCart(plant))
     }
 
     return (

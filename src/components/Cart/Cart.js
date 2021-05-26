@@ -1,7 +1,7 @@
 import React from "react";
 import CartDisplay from './CartDisplay'
 import { useSelector, useDispatch } from "react-redux";
-import { displayCart, hideCart } from '../Cart/cartSlice'
+import { hideCart } from '../Cart/cartSlice'
 
 const Cart = () => {
   const display = useSelector((state) => state.cart.display)
