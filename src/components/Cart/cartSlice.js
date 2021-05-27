@@ -5,29 +5,30 @@ export const cartSlice = createSlice({
     name: 'cart',
     initialState: {
         products: products,
-        addedIds: [],
-        quantityById: [],
+        currentCart: [],
+        total: 0,
         display: 'hidden'
     },
     reducers: {
         addToCart: (state, action) => {
-            // if action.paylod is in addedIds,
-            // action.payload.quantity + 1
-            // else action.payload quantity = 1
-
-            state.addedIds.push(action.payload)
+            state.currentCart.push(action.payload)
+            state.total += 1
+        },
+        removeFromCart: (state, action) => {
+            state.currentCart = state.currentCart.filter(item => item.product.id !== action.payload.product.id)
+            // state.currentCart.push(action.payload)
+            state.total -= 1
         },
         addQuantity: (state, action) => {
-            let addedItem = state.products.find(product => product.id === action.payload.id)
-            let existingItem = state.addedIds.find(product => action.payload.id === product.id)
-
-            if (existingItem) {
-                addedItem.quantity += 1;
-            } else {
-                addedItem.quantity = 0
-            }
+            // Find id in currentCart, grab all products that is not payload, add quantity + 1, set new state
+            let item = state.currentCart.find(item => item.product.id === action.payload.product.id)
+            let newCart = state.currentCart.filter(item => item.product.id !== action.payload.product.id)
             
-            state.quantityById.push(addedItem)
+            item.quantity = item.quantity + 1
+
+            newCart.push(item)
+
+            state.currentCart = newCart
         },
         displayCart: (state) => {
             state.display = null

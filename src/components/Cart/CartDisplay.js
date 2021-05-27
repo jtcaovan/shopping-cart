@@ -10,6 +10,7 @@ function CartDisplay(props) {
                 <p>{props.id}</p>
                 <p>{props.name}</p>
                 <p>{props.price}</p>
+                <p>{props.quantity}</p>
             </div>
         </div>
     )

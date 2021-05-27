@@ -15,19 +15,20 @@ import { faStar }  from '@fortawesome/free-solid-svg-icons'
 
 function ItemDetail() {
     const products = useSelector((state) => state.cart.products)
-    const cart = useSelector((state) => state.cart.quantityById)
+    const cart = useSelector((state) => state.cart.currentCart)
     const dispatch = useDispatch()
     let { name } = useParams()
     
-    let plant = products.find(item => name === item.name)
-
+    let product = products.find(item => name === item.name)
     function handleClick() {
-        // cart !== plant ? dispatch(addToCart(plant)) : dispatch(addQuantity(plant.id))
+        dispatch(addToCart({
+            product,
+            quantity: 0
+        }))
 
-        dispatch(addToCart(plant))
-        console.log(cart)
-        dispatch(addQuantity(plant.id))
-        dispatch(displayCart(plant))
+        dispatch(addQuantity({product}))
+
+        dispatch(displayCart())
     }
 
     return (
@@ -35,18 +36,18 @@ function ItemDetail() {
             <Nav />
             <div className='h-screen'>
                 <div className='h-4/5 w-10/12 my-12 mx-auto flex space-x-24 justify-between '>
-                    <img src={plant.img} alt=''/>
+                    <img src={product.img} alt=''/>
 
                     <div className='w-2/5 flex-col divide-y-2 space-y-8'>
                         <div className='space-y-8'>
                             <div className='flex justify-between '>
-                                <h1 className='font-display text-5xl text-gray-800'>{plant.name}</h1>
-                                <p className='font-body text-xl text-gray-800'>{plant.price}</p>
+                                <h1 className='font-display text-5xl text-gray-800'>{product.name}</h1>
+                                <p className='font-body text-xl text-gray-800'>{product.price}</p>
                             </div>
 
                             <div>
-                                <p className='font-body leading-relaxed text-gray-700'>The {plant.name} is a beautiful, statement piece plant that brings style and brightness to any indoor space.
-                                This plant requires <span className='font-semibold'>{plant.light}</span>.</p>
+                                <p className='font-body leading-relaxed text-gray-700'>The {product.name} is a beautiful, statement piece product that brings style and brightness to any indoor space.
+                                This product requires <span className='font-semibold'>{product.light}</span>.</p>
                             </div>
 
                             <div className='flex'>
@@ -70,24 +71,24 @@ function ItemDetail() {
                             <div className='flex flex-col mt-2 space-y-2'>
                                 <div className='flex'>
                                     <FontAwesomeIcon className='text-gray-700' icon={ faSun }/> 
-                                    <p className='font-body ml-2 text-gray-700'>{plant.light}</p>
+                                    <p className='font-body ml-2 text-gray-700'>{product.light}</p>
                                 </div>
                                 <div>
-                                    {plant.beginner && 
+                                    {product.beginner && 
                                     <div className='flex'>
                                         <FontAwesomeIcon className='text-gray-700' icon={ faSeedling } />
                                         <p className='font-body ml-2 text-gray-700'>Beginner Friendly</p>
                                     </div>}
                                 </div>
                                 <div>
-                                    {plant.purify && 
+                                    {product.purify && 
                                     <div className='flex'>
                                         <FontAwesomeIcon className='text-gray-700' icon={ faWind } />
                                         <p className='font-body ml-2 text-gray-700'>Air Purifying</p>
                                     </div>}
                                 </div>
                                 <div>
-                                    {plant.petFriendly && 
+                                    {product.petFriendly && 
                                     <div className='flex'>
                                         <FontAwesomeIcon className='text-gray-700' icon={ faPaw } />
                                         <p className='font-body ml-2 text-gray-700'>Pet Friendly</p>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import ItemDisplay from './ItemDisplay'
+import ShopDisplay from './ShopDisplay'
 import Nav from 'components/Nav/Header'
 import Footer from 'components/Footer/Footer'
 import ShopHero from 'components/Shop/ShopHero'
@@ -12,7 +12,7 @@ function Shop() {
   const products = useSelector(state=> state.cart.products)
 
   let plants = products.map(plant => 
-    <ItemDisplay
+    <ShopDisplay
       key={plant.id}
       name={plant.name} 
       light={plant.light}

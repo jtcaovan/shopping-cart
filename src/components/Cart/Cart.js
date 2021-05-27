@@ -5,15 +5,19 @@ import { hideCart } from '../Cart/cartSlice'
 
 const Cart = () => {
   const display = useSelector((state) => state.cart.display)
-  const cartItems = useSelector((state) => state.cart.addedIds)
+  const cart = useSelector((state) => state.cart.currentCart)
+  const total = useSelector((state) => state.cart.total)
   const dispatch = useDispatch()
 
-  let cart = cartItems.map(item => 
+  // let cartIds = cart.find(id => id === products.id)
+
+  let cartItems = cart.map(item => 
     <CartDisplay 
-        id={item.id}
-        name={item.name} 
-        price={item.price}
-        img={item.img}
+        id={item.product.id}
+        name={item.product.name} 
+        price={item.product.price}
+        img={item.product.img}
+        quantity={item.quantity}
     />
   )
 
@@ -27,7 +31,7 @@ const Cart = () => {
         </div>
         <div className='absolute text-black inset-y-0 right-0 h-screen w-1/3 bg-white z-10'>
           <div className='m-6 flex justify-between'>
-            <p className='text-4xl font-display'>Cart <span className='text-lg'>({cartItems.length} items)</span></p>
+            <p className='text-4xl font-display'>Cart <span className='text-lg'>({total} items)</span></p>
               <svg 
                 onClick={() => dispatch(hideCart())} 
                 className="h-6 w-6" 
@@ -37,7 +41,7 @@ const Cart = () => {
             </svg>
           </div>
 
-          {/* If addedIds = 0 ? display empty state : CartDisplay */}
+          {/* If cart = 0 ? display empty state : CartDisplay */}
           <div className=' font-body inset-y-1/2 inset-x-1/3 w-full h-24'>
             {/* <p>Your cart is empty!</p>
             <button 
@@ -47,7 +51,7 @@ const Cart = () => {
             Shop Now
             </button>    */}
 
-            {cart}
+            {cartItems}
           <button>
                 Checkout
             </button>
