@@ -2,11 +2,12 @@ import React from 'react'
 
 function CartDisplay(props) {
     return (
-        <div className='flex justify-between m-6'>
+        <div className='flex h-26 justify-between items-center m-6'>
             <img 
-                className='h-12 w-12'
+                className='w-16'
                 src={props.img} alt=''
             />
+
             <p>{props.name}</p>
             <p>{props.quantity}</p>
             <p>{props.price}</p>

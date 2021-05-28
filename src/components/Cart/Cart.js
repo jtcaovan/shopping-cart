@@ -22,7 +22,7 @@ const Cart = () => {
   return (
     <div className={display}>
 
-      <div className='overflow-hidden w-screen flex'>
+      <div className='overflow-hidden w-full flex'>
 
         <div 
           className='absolute w-2/3 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
@@ -31,11 +31,11 @@ const Cart = () => {
         </div>
 
         <div className='absolute text-black inset-y-0 right-0 h-screen w-1/3 bg-white z-10'>
-          <div className='m-6 flex justify-between'>
-            <p className='text-4xl font-display'>Cart <span className='text-lg'>({total} items)</span></p>
+          <div className='flex justify-between bg-gray-200 bg-opacity-90'>
+            <p className='text-4xl m-6 font-display'>Cart <span className='text-lg'>({total} items)</span></p>
               <svg 
                 onClick={() => dispatch(hideCart())} 
-                className="h-6 w-6" 
+                className="m-8 h-6 w-6" 
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" 
               />
