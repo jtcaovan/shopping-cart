@@ -53,11 +53,16 @@ const Cart = () => {
                     Shop Now  
                     </button>
                 </div> }
-                {cartItems}
-{/* 
-            <button>
-                Checkout
-            </button> */}
+
+                {total !== 0 &&
+                  <div className='flex-col divide-y-2'>
+                    {cartItems}
+                    <p>Subtotal</p>
+                    <button>
+                        Checkout
+                    </button>
+                  </div>
+                }
           </div>
         </div>
       </div>
