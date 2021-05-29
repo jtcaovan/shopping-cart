@@ -22,17 +22,17 @@ const Cart = () => {
   return (
     <div className={display}>
 
-      <div className='overflow-hidden w-full flex'>
+      <div className='overflow-hidden w-full h-full flex'>
 
         <div 
-          className='absolute w-2/3 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
+          className='absolute w-3/4 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
           onClick={() => dispatch(hideCart())}
         >
         </div>
 
-        <div className='absolute text-black inset-y-0 right-0 h-screen w-1/3 bg-white z-10'>
+        <div className='absolute text-black inset-y-0 right-0 h-screen w-1/4 bg-white z-10'>
           <div className='flex justify-between bg-gray-200 bg-opacity-90'>
-            <p className='text-4xl m-6 font-display'>Cart <span className='text-lg'>({total} items)</span></p>
+            <p className='text-4xl m-6 text-gray-800 font-display'>Cart <span className='text-lg'>({total} items)</span></p>
               <svg 
                 onClick={() => dispatch(hideCart())} 
                 className="m-8 h-6 w-6" 
@@ -47,7 +47,7 @@ const Cart = () => {
                   <div className='font-body absolute inset-y-1/2 inset-x-1/3 w-full h-24'>
                     <p>Your cart is empty!</p>
                     <button 
-                      className='h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded-r transition 
+                      className='h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded transition 
                       duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'
                     >
                     Shop Now  
@@ -55,13 +55,19 @@ const Cart = () => {
                 </div> }
 
                 {total !== 0 &&
-                  <div className='flex-col divide-y-2'>
+                <div>
+                  <div className='flex-col p-2'>
                     {cartItems}
                     <p>Subtotal</p>
-                    <button>
+                  </div>
+                  <div className='justify-center'>
+                    <button   
+                    className='justify-self-center h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded transition 
+                      duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'>
                         Checkout
                     </button>
                   </div>
+                </div>
                 }
           </div>
         </div>
