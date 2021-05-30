@@ -21,7 +21,6 @@ const App = () => {
                         <Route exact path='/shop:airpurify' component={} />
                         <Route exact path='/shop:petfriendly' component={} /> */}
                         <Route exact path='/shop/:name' component={ItemDetail} />
-                        {/* <Route exact path='/cart' component={Cart} /> */}
                     </Switch>
                 </Router>
         </Provider>

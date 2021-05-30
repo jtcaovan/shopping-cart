@@ -25,13 +25,13 @@ const Cart = () => {
       <div className='overflow-hidden w-full h-full flex'>
 
         <div 
-          className='absolute w-3/4 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
+          className='overflow-hidden absolute w-3/4 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
           onClick={() => dispatch(hideCart())}
         >
         </div>
 
-        <div className='absolute text-black inset-y-0 right-0 h-screen w-1/4 bg-white z-10'>
-          <div className='flex justify-between bg-gray-200 bg-opacity-90'>
+        <div className='overflow-hidden absolute text-black inset-y-0 right-0 h-screen w-1/4 bg-white z-10'>
+          <div className='overflow-hidden flex justify-between bg-gray-200 bg-opacity-90'>
             <p className='text-4xl m-6 text-gray-800 font-display'>Cart <span className='text-lg'>({total} items)</span></p>
               <svg 
                 onClick={() => dispatch(hideCart())} 
@@ -60,9 +60,9 @@ const Cart = () => {
                     {cartItems}
                     <p>Subtotal</p>
                   </div>
-                  <div className='justify-center'>
+                  <div className='text-center'> 
                     <button   
-                    className='justify-self-center h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded transition 
+                    className='h-12 p-4 my-6 w-2/4 font-body text-sm bg-gray-900 text-white rounded transition 
                       duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'>
                         Checkout
                     </button>
