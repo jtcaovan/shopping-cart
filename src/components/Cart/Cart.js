@@ -6,7 +6,8 @@ import { hideCart } from '../Cart/cartSlice'
 const Cart = () => {
   const display = useSelector((state) => state.cart.display)
   const cart = useSelector((state) => state.cart.currentCart)
-  const total = useSelector((state) => state.cart.total)
+  const totalItems = useSelector((state) => state.cart.totalItems)
+  const totalPrice = useSelector((state) => state.cart.totalPrice)
   const dispatch = useDispatch()
 
   let cartItems = cart.map(item => 
@@ -32,7 +33,7 @@ const Cart = () => {
 
         <div className='absolute text-black inset-y-0 right-0 h-screen w-1/4 bg-white z-10'>
           <div className='flex justify-between bg-gray-200 bg-opacity-90'>
-            <p className='text-4xl m-6 text-gray-800 font-display'>Cart <span className='text-lg'>({total} items)</span></p>
+            <p className='text-4xl m-6 text-gray-800 font-display'>Cart <span className='text-lg'>({totalItems} items)</span></p>
               <svg 
                 onClick={() => dispatch(hideCart())} 
                 className="m-8 h-6 w-6" 
@@ -43,7 +44,7 @@ const Cart = () => {
           </div>
 
           <div className=''>
-                {total === 0 &&   
+                {totalItems === 0 &&   
                   <div className='font-body absolute inset-y-1/2 inset-x-1/3 w-full h-24'>
                     <p>Your cart is empty!</p>
                     <button 
@@ -54,11 +55,11 @@ const Cart = () => {
                     </button>
                 </div> }
 
-                {total !== 0 &&
+                {totalItems !== 0 &&
                 <div>
                   <div className='flex-col p-2'>
                     {cartItems}
-                    <p>Subtotal</p>
+                    <p>Subtotal {totalPrice}</p>
                   </div>
                   <div className='text-center'> 
                     <button   

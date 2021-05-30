@@ -2,7 +2,7 @@ import React from 'react'
 import Nav from 'components/Nav/ItemHeader'
 import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { addToCart, displayCart, addQuantity } from '../Cart/cartSlice'
+import { addToCart, displayCart, addQuantity, addToTotal} from '../Cart/cartSlice'
 
 import Footer from 'components/Footer/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,7 +15,6 @@ import { faStar }  from '@fortawesome/free-solid-svg-icons'
 
 function ItemDetail() {
     const products = useSelector((state) => state.cart.products)
-    const cart = useSelector((state) => state.cart.currentCart)
     const dispatch = useDispatch()
     let { name } = useParams()
     
@@ -27,7 +26,7 @@ function ItemDetail() {
         }))
 
         dispatch(addQuantity({product}))
-
+        dispatch(addToTotal(product.price))
         dispatch(displayCart())
     }
 
@@ -42,7 +41,7 @@ function ItemDetail() {
                         <div className='space-y-8'>
                             <div className='flex justify-between '>
                                 <h1 className='font-display text-5xl text-gray-800'>{product.name}</h1>
-                                <p className='font-body text-xl text-gray-800'>{product.price}</p>
+                                <p className='font-body text-xl text-gray-800'>${product.price}</p>
                             </div>
 
                             <div>

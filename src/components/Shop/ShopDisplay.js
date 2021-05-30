@@ -9,7 +9,7 @@ function ShopItems(props) {
             <img className='filter cursor-pointer rounded-md drop-shadow-md hover:opacity-75' src={props.img} alt=''/>
                 <div className='font-body flex justify-between text-xl py-3'>
                     <p>{props.name}</p>
-                    <p>{props.price}</p>
+                    <p>${props.price}</p>
                 </div>
             </Link>
         </div>

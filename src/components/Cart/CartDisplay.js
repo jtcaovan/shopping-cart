@@ -10,7 +10,7 @@ function CartDisplay(props) {
 
             <p>{props.name}</p>
             <p>{props.quantity}</p>
-            <p>{props.price}</p>
+            <p>${props.price * props.quantity}</p>
         </div>
     )
 }
