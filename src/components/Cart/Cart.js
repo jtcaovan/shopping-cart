@@ -22,16 +22,16 @@ const Cart = () => {
   return (
     <div className={display}>
 
-      <div className='overflow-hidden w-full h-full flex'>
+      <div className='overflow-hidden overscroll-contain z-10 fixed w-full h-screen flex'>
 
         <div 
-          className='overflow-hidden absolute w-3/4 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
+          className='absolute w-3/4 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
           onClick={() => dispatch(hideCart())}
         >
         </div>
 
-        <div className='overflow-hidden absolute text-black inset-y-0 right-0 h-screen w-1/4 bg-white z-10'>
-          <div className='overflow-hidden flex justify-between bg-gray-200 bg-opacity-90'>
+        <div className='absolute text-black inset-y-0 right-0 h-screen w-1/4 bg-white z-10'>
+          <div className='flex justify-between bg-gray-200 bg-opacity-90'>
             <p className='text-4xl m-6 text-gray-800 font-display'>Cart <span className='text-lg'>({total} items)</span></p>
               <svg 
                 onClick={() => dispatch(hideCart())} 
