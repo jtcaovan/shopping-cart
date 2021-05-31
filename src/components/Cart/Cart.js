@@ -57,9 +57,9 @@ const Cart = () => {
 
                 {totalItems !== 0 &&
                 <div>
-                  <div className='flex-col p-2'>
+                  <div className='flex-col p-2 font-body'>
                     {cartItems}
-                    <p>Subtotal {totalPrice}</p>
+                    <p>Subtotal <b>${totalPrice}</b></p>
                   </div>
                   <div className='text-center'> 
                     <button   

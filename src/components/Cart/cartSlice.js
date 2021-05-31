@@ -13,12 +13,12 @@ export const cartSlice = createSlice({
     reducers: {
         addToCart: (state, action) => {
             state.currentCart.push(action.payload)
-            state.total += 1
+            state.totalItems += 1
         },
         removeFromCart: (state, action) => {
             state.currentCart = state.currentCart.filter(item => item.product.id !== action.payload.product.id)
             // state.currentCart.push(action.payload)
-            state.total -= 1
+            state.totalItems -= 1
         },
         addQuantity: (state, action) => {
             // Find id in currentCart, grab all products that is not payload, add quantity + 1, set new state
