@@ -57,9 +57,14 @@ const Cart = () => {
 
                 {totalItems !== 0 &&
                 <div>
-                  <div className='flex-col p-2 font-body'>
-                    {cartItems}
-                    <p>Subtotal <b>${totalPrice}</b></p>
+                  <div className='flex-col divide-y-2 p-2 font-body text-gray-800'>
+                    <div>
+                      {cartItems}
+                    </div>
+                    <div className='flex p-6 justify-between'>
+                      <p className=''>Subtotal</p>
+                      <p className='font-semibold'>${totalPrice} </p>
+                    </div>
                   </div>
                   <div className='text-center'> 
                     <button   

@@ -21,7 +21,7 @@ export const cartSlice = createSlice({
             state.totalItems -= 1
         },
         addQuantity: (state, action) => {
-            // Find id in currentCart, grab all products that is not payload, add quantity + 1, set new state
+            // Find payload.id in currentCart, grab all products that is not payload.id, add quantity + 1, set new state
             let item = state.currentCart.find(item => item.product.id === action.payload.product.id)
             let newCart = state.currentCart.filter(item => item.product.id !== action.payload.product.id)
             
