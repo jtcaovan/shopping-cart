@@ -1,7 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus }  from '@fortawesome/free-solid-svg-icons'
-import { faMinus }  from '@fortawesome/free-solid-svg-icons'
 
 function CartDisplay(props) {
 
@@ -13,9 +10,15 @@ function CartDisplay(props) {
             />
 
             <p className='w-2/6'>{props.name}</p>
-            <FontAwesomeIcon icon={faMinus}/>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+            </svg>            
             <p className='border-2 p-2'>{props.quantity}</p>
-            <FontAwesomeIcon icon={faPlus}/>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg> 
+
             <p className='w-1/6'>${props.price * props.quantity}</p>
         </div>
     )
