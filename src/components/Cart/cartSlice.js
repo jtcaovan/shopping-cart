@@ -15,20 +15,20 @@ export const cartSlice = createSlice({
             state.currentCart.push(action.payload)
             state.totalItems += 1
         },
-        removeFromCart: (state, action) => {
-            state.currentCart = state.currentCart.filter(item => item.product.id !== action.payload.product.id)
-            // state.currentCart.push(action.payload)
-            state.totalItems -= 1
+        subtractQuantity: (state, action) => {
+            let item = state.currentCart.find(item => item.product.id === action.payload)
+            let newCart = state.currentCart.filter(item => item.product.id !== action.payload)
+
+            item.quantity = item.quantity - 1
+            newCart.push(item)
+            state.currentCart = newCart
         },
         addQuantity: (state, action) => {
-            // Find payload.id in currentCart, grab all products that is not payload.id, add quantity + 1, set new state
-            let item = state.currentCart.find(item => item.product.id === action.payload.product.id)
-            let newCart = state.currentCart.filter(item => item.product.id !== action.payload.product.id)
+            let item = state.currentCart.find(item => item.product.id === action.payload)
+            let newCart = state.currentCart.filter(item => item.product.id !== action.payload)
             
             item.quantity = item.quantity + 1
-
             newCart.push(item)
-
             state.currentCart = newCart
         },
         addToTotal: (state, action) => {
@@ -43,6 +43,6 @@ export const cartSlice = createSlice({
     }
 })
 
-export const { addToCart, displayCart, hideCart, addQuantity, addToTotal} = cartSlice.actions
+export const { addToCart, displayCart, hideCart, addQuantity, subtractQuantity, addToTotal} = cartSlice.actions
 
 export default cartSlice.reducer

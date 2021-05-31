@@ -19,13 +19,14 @@ function ItemDetail() {
     let { name } = useParams()
     
     let product = products.find(item => name === item.name)
+
     function handleClick() {
         dispatch(addToCart({
             product,
             quantity: 0
         }))
 
-        dispatch(addQuantity({product}))
+        dispatch(addQuantity(product.id))
         dispatch(addToTotal(product.price))
         dispatch(displayCart())
     }
