@@ -31,6 +31,9 @@ export const cartSlice = createSlice({
             newCart.push(item)
             state.currentCart = newCart
         },
+        increaseQuantity: (state, action) => {
+            
+        },
         addToTotal: (state, action) => {
             state.totalPrice += action.payload
         },
