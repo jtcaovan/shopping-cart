@@ -25,7 +25,6 @@ function ItemDetail() {
             product,
             quantity: 0
         }))
-
         dispatch(addQuantity(product.id))
         dispatch(addToTotal(product.price))
         dispatch(displayCart())

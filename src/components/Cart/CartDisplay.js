@@ -1,16 +1,16 @@
 import React from 'react'
 import { useDispatch} from 'react-redux'
-import { addQuantity, subtractQuantity } from '../Cart/cartSlice'
+import { subtractCartQuantity , increaseCartQuantity} from '../Cart/cartSlice'
 
 function CartDisplay(props) {
     const dispatch = useDispatch()
 
     function addQuantityToCart() {
-        dispatch(addQuantity(props.id))
+        dispatch(increaseCartQuantity(props.id))
     }
 
     function subtractQuantityFromCart() {
-        dispatch(subtractQuantity(props.id))
+        dispatch(subtractCartQuantity(props.id))
 
     }
 
