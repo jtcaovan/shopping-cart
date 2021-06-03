@@ -44,6 +44,9 @@ export const cartSlice = createSlice({
         addToTotal: (state, action) => {
             state.totalPrice += action.payload
         },
+        subtractFromTotal: (state, action) => {
+            state.totalPrice -= action.payload
+        },
         displayCart: (state) => {
             state.display = null
         },
@@ -53,6 +56,6 @@ export const cartSlice = createSlice({
     }
 })
 
-export const { addToCart, displayCart, hideCart, addQuantity, addToTotal, increaseCartQuantity, subtractCartQuantity} = cartSlice.actions
+export const { addToCart, displayCart, hideCart, addQuantity, addToTotal, subtractFromTotal, increaseCartQuantity, subtractCartQuantity} = cartSlice.actions
 
 export default cartSlice.reducer

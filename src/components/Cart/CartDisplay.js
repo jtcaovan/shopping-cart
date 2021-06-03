@@ -1,17 +1,18 @@
 import React from 'react'
 import { useDispatch} from 'react-redux'
-import { subtractCartQuantity , increaseCartQuantity} from '../Cart/cartSlice'
+import { subtractCartQuantity , increaseCartQuantity, addToTotal, subtractFromTotal} from '../Cart/cartSlice'
 
 function CartDisplay(props) {
     const dispatch = useDispatch()
 
     function addQuantityToCart() {
         dispatch(increaseCartQuantity(props.id))
+        dispatch(addToTotal(props.price))
     }
 
     function subtractQuantityFromCart() {
         dispatch(subtractCartQuantity(props.id))
-
+        dispatch(subtractFromTotal(props.price))
     }
 
     return (
@@ -41,7 +42,7 @@ function CartDisplay(props) {
                 </div>
             </div>
 
-            <p className='w-1/6 font-semibold'>${props.price * props.quantity}</p>
+            <p className='w-1/6 font-semibold'>${Math.round((props.price * props.quantity)* 100)/100}</p>
         </div>
     )
 }

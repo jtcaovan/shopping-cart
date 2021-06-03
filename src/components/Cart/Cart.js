@@ -64,7 +64,7 @@ const Cart = () => {
                 </div>
                 <div className='flex p-4 justify-between'>
                   <p className=''>Subtotal</p>
-                  <p className='font-semibold'>${totalPrice} </p>
+                  <p className='font-semibold'>${Math.round(totalPrice * 100)/ 100} </p>
                 </div>
               </div>
               <div className='text-center'> 
