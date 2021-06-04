@@ -31,15 +31,17 @@ export const cartSlice = createSlice({
                 return item
             })
             state.currentCart = newState
+            state.totalItems += 1
         },
         subtractCartQuantity: (state, action) => {
-            let newState = state.currentCart.map(item => { 
+            let newCart = state.currentCart.map(item => { 
                 if (item.product.id === action.payload) {
-                    item.quantity -= 1
+                        item.quantity -= 1
                 }
                 return item
             })
-            state.currentCart = newState
+            state.currentCart = newCart.filter(item => item.quantity !== 0)
+            state.totalItems -= 1
         },
         addToTotal: (state, action) => {
             state.totalPrice += action.payload
