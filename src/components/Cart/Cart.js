@@ -1,5 +1,6 @@
 import React from "react";
 import CartDisplay from './CartDisplay'
+import { Link } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux";
 import { hideCart } from '../Cart/cartSlice'
 
@@ -48,12 +49,15 @@ const Cart = () => {
             {totalItems === 0 &&   
               <div className='font-body absolute inset-y-1/2 inset-x-1/3 w-full h-24'>
                 <p>Your cart is empty!</p>
-                <button 
-                  className='h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded transition 
-                  duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'
-                >
-                Shop Now  
-                </button>
+                <Link to='./shop'>
+                  <button
+                    onClick={() => dispatch(hideCart())}
+                    className='h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded transition 
+                    duration-300 border-gray-900 hover:bg-transparent hover:text-gray-900 hover:border'
+                  >
+                  Shop Now  
+                  </button>
+                </Link>
             </div> }
 
             {totalItems !== 0 &&
