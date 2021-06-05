@@ -16,7 +16,7 @@ function TextCards() {
                         the most boring rooms to life.  
                     </p>
                     <div>
-                        <Link className='' to='/shop'>
+                        <Link className='' to='/shop/all'>
                             <button className='bg-red-500 font-body rounded-md text-white text-xl p-4 w-48
                             transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Now</button>
                         </Link>
@@ -38,7 +38,7 @@ function TextCards() {
                         Plants release oxygen and remove toxins from the air 
                         so you can work, breathe, and sleep easier. </p>
                 <div>
-                    <Link to='/shop'>
+                    <Link to='/shop/all'>
                         <button className='p-4 w-48 bg-red-500 font-body rounded-md text-white text-xl 
                         transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Air Purifiers</button>
                     </Link>

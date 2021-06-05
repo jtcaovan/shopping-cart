@@ -24,17 +24,15 @@ function Shop() {
     />)
 
   return (
-    <div className='h-screen'>
-      <Nav />
-      <ShopHero />      
-          <div className='h-full'>
-            <ShopNav />
-            <div className='grid grid-cols-3 mx-8 gap-x-8 gap-y-12'>
-                {plants}
-            </div>
-            <Footer />
-          </div>
-    </div>
+      <div className='h-screen'>
+        <Nav />
+        <ShopHero />
+        <ShopNav />
+        <div className='grid grid-cols-3 mx-8 gap-x-8 gap-y-12'>
+            {plants}
+        </div>
+        <Footer />
+      </div>
     )
   }
   
