@@ -35,10 +35,18 @@ function Footer() {
                     <Link to='/shop'>
                         <h1 className='font-display font-medium text-lg text-gray-900'>Shop</h1>
                     </Link>
-                    <p className='font-body text-gray-700'>Air Purifying</p>
-                    <p className='font-body text-gray-700'>Pet Friendly</p>
-                    <p className='font-body text-gray-700'>Beginner Friendly</p>
-                    <p className='font-body text-gray-700'>Succulents</p>
+                    <Link to={`/shop/airPurifying`}>
+                        <p className='font-body text-gray-700'>Air Purifying</p>
+                    </Link>
+                    <Link to='/shop:beginner'>
+                        <p className='font-body text-gray-700'>Beginner Friendly</p>
+                    </Link>
+                    <Link to='/shop:petFriendly'>
+                        <p className='font-body text-gray-700'>Pet Friendly</p>
+                    </Link>
+                    <Link to='/shop:succulents'>
+                        <p className='font-body text-gray-700'>Succulents</p>
+                    </Link>
                 </div>
                 <div className='flex flex-col space-y-4'>
                     <h1 className='font-display font-medium text-lg text-gray-900'>Contact</h1>
