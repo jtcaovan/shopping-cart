@@ -49,7 +49,7 @@ const Cart = () => {
             {totalItems === 0 &&   
               <div className='font-body absolute inset-y-1/2 inset-x-1/3 w-full h-24'>
                 <p>Your cart is empty!</p>
-                <Link to='/shop/all'>
+                <Link to='/shop'>
                   <button
                     onClick={() => dispatch(hideCart())}
                     className='h-12 p-4 my-4 w-1/3 font-body text-sm bg-gray-900 text-white rounded transition 

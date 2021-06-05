@@ -16,7 +16,7 @@ const Nav = () => {
                 <Link to='/about'>
                     <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal border-red-500 hover:border-b-2'>About</li>
                 </Link>
-                <Link to='/shop/all'>
+                <Link to='/shop'>
                     <li className='transition duration-300 transform hover:-translate-y-1 hover:text-red-500 hover:font-normal border-red-500 hover:border-b-2'>Shop</li>
                 </Link>
 

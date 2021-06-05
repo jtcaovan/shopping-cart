@@ -6,8 +6,6 @@ import Footer from 'components/Footer/Footer'
 import ShopHero from 'components/Shop/ShopHero'
 import ShopNav from 'components/Shop/ShopNav'
 
-
-
 function Shop() {
   const products = useSelector(state=> state.cart.products)
 
