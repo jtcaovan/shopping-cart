@@ -153,6 +153,7 @@ let products = [
         purify: false,
         beginner: true,
         petFriendly: false,
+        succulent: true,
         img: succulentTrio
     },
     {
@@ -163,6 +164,7 @@ let products = [
         purify: false,
         beginner: true,
         petFriendly: false,
+        succulent: true,
         img: cactusTrio
     },
     

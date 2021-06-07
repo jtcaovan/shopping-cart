@@ -19,11 +19,11 @@ function Collections() {
         case 'beginner':
             plantCollection = products.filter(item => item.beginner)
             break
-        case 'petFriendly':
+        case 'pet-friendly':
             plantCollection = products.filter(item => item.petFriendly)
             break
         case 'succulents':
-            plantCollection = products.filter(item => item.purify)
+            plantCollection = products.filter(item => item.succulent)
             break
         default:
             break
