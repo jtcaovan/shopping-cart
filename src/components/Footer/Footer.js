@@ -38,13 +38,13 @@ function Footer() {
                     <Link to={`/shop/airPurifying`}>
                         <p className='font-body text-gray-700'>Air Purifying</p>
                     </Link>
-                    <Link to='/shop:beginner'>
+                    <Link to='/shop/beginner'>
                         <p className='font-body text-gray-700'>Beginner Friendly</p>
                     </Link>
-                    <Link to='/shop:petFriendly'>
+                    <Link to='/shop/petFriendly'>
                         <p className='font-body text-gray-700'>Pet Friendly</p>
                     </Link>
-                    <Link to='/shop:succulents'>
+                    <Link to='/shop/succulents'>
                         <p className='font-body text-gray-700'>Succulents</p>
                     </Link>
                 </div>

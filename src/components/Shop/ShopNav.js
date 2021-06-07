@@ -1,10 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 function ShopNav() {
+    let name = useParams()
+
     return(
         <div>              
-            <h1 className='font-display mt-12 text-4xl font-medium text-center text-gray-700'>Bloom's Collection</h1>
+            <div className='font-display mt-12 text-4xl font-medium text-center text-gray-700'>
+                {name.collection === undefined && <h1> Bloom's Collection </h1>}
+                {name.collection === 'airPurifying' && <h1>Air Purifying Plants</h1>}
+                {name.collection === 'beginner' && <h1>Plants for Beginners</h1>}
+                {name.collection === 'pet-friendly' && <h1>Pet Friendly Plants</h1>}
+                {name.collection === 'succulents' && <h1>Succulents</h1>}
+            </div>
             <p className='font-body text-gray-600 text-center'>Shopping for plants has never been easier</p>
             <div className='flex space-x-4 justify-center mt-6 mb-12 '>
                 <Link to={`/shop/airPurifying`}>
