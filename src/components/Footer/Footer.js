@@ -35,7 +35,7 @@ function Footer() {
                     <Link to='/shop'>
                         <h1 className='font-display font-medium text-lg text-gray-900'>Shop</h1>
                     </Link>
-                    <Link to={`/shop/airPurifying`}>
+                    <Link to='/shop/airPurifying'>
                         <p className='font-body text-gray-700'>Air Purifying</p>
                     </Link>
                     <Link to='/shop/beginner'>
