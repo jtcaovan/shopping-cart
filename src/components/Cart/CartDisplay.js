@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { useDispatch} from 'react-redux'
 import { subtractCartQuantity , increaseCartQuantity, addToTotal, subtractFromTotal} from '../Cart/cartSlice'
 
@@ -17,10 +18,13 @@ function CartDisplay(props) {
 
     return (
         <div className='flex justify-between space-x-6 items-center mx-4 my-4'>
-            <img 
-                className='w-1/5 shadow-md hover:opacity-75 hover:border hover:border-gray-300'
-                src={props.img} alt=''
-            />
+            <Link to={`/shop/collection/${props.name}`}
+            className='w-1/5 shadow-md hover:opacity-75 hover:border hover:border-gray-300'
+            >
+                <img 
+                    src={props.img} alt=''
+                />
+            </Link>
 
             <div className='flex-col w-1/2 space-y-2'>
                 <p className='text-md'>{props.name}</p>

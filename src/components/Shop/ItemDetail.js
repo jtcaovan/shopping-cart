@@ -33,9 +33,9 @@ function ItemDetail() {
     return (
         <div>
             <Nav />
-            <div className='h-screen'>
+            <div className='h-full'>
                 <div className='h-4/5 w-10/12 my-12 mx-auto flex space-x-24 justify-between '>
-                    <img src={product.img} alt=''/>
+                    <img className='w-3/6' src={product.img} alt=''/>
 
                     <div className='w-2/5 flex-col divide-y-2 space-y-8'>
                         <div className='space-y-8'>
@@ -65,9 +65,9 @@ function ItemDetail() {
                             <p className='font-body text-sm text-gray-600'>White</p>
                         </div>
 
-                        <div>
+                        <div className='flex-col space-y-5'>
                             <h2 className='font-body font-semibold mt-4 text-gray-800'>Details</h2>
-                            <div className='flex flex-col mt-2 space-y-2'>
+                            <div className='flex-col space-y-5'>
                                 <div className='flex'>
                                     <FontAwesomeIcon className='text-gray-700' icon={ faSun }/> 
                                     <p className='font-body ml-2 text-gray-700'>{product.light}</p>
@@ -102,7 +102,7 @@ function ItemDetail() {
                                     Add to Cart
                             </button>
 
-                            <div className='flex justify-around mt-2'>
+                            <div className='flex justify-around pt-4'>
                                 <p className='w-24 font-body text-gray-600 hover:text-gray-900'>Made to order</p>
                                 <p className='w-24 font-body text-gray-600 hover:text-gray-900'>60 Day Guarantee</p>
                                 <p className='w-24 font-body text-gray-600 hover:text-gray-900'>24/7 Plant Help</p>
