@@ -24,16 +24,14 @@ const Cart = () => {
 
   return (
     <div className={display}>
-
-      <div className='z-10 fixed w-full h-screen'>
-
+      <div className='z-10 fixed w-full h-full'>
         <div 
-          className='absolute w-3/4 inset-0 bg-gray-700 bg-opacity-50 h-screen z-20'
+          className='absolute w-3/4 inset-0 bg-gray-700 bg-opacity-50  z-20'
           onClick={() => dispatch(hideCart())}
         >
         </div>
 
-        <div className='absolute inset-y-0 right-0 h-screen w-1/4 bg-white z-10'>
+        <div className='absolute inset-y-0 right-0 w-1/4 bg-white z-10'>
           <div className='flex justify-between h-16 bg-gray-200 bg-opacity-90'>
             <p className='text-3xl mx-4 my-3 text-gray-700 font-display'>Cart <span className='text-lg'>({totalItems} items)</span></p>
               <svg 
