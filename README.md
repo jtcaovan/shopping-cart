@@ -21,4 +21,5 @@ This project was created in congruence with React and Redux documentation, tutor
 * Tailwind CSS
 
 ## Challenges
-* Had difficult implementing Redux into the application. 
+* Struggled to implement Redux into the application, ended up using Redux-Toolkit to simplify the process.
+* 
