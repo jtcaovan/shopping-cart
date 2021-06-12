@@ -21,5 +21,7 @@ This project was created in congruence with React and Redux documentation, tutor
 * Tailwind CSS
 
 ## Challenges
-* Struggled to implement Redux into the application, ended up using Redux-Toolkit to simplify the process.
-* Building and structuring a larger project, especially when implementing Redux
+* Struggled to implement Redux into the application, used Redux-Toolkit to simplify the process.
+* Implementing nested Routes with react-router hooks
+* Organizing and structuring a larger project, especially when implementing Redux
+* Styling elements for better UX design.
