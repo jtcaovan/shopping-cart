@@ -22,4 +22,4 @@ This project was created in congruence with React and Redux documentation, tutor
 
 ## Challenges
 * Struggled to implement Redux into the application, ended up using Redux-Toolkit to simplify the process.
-* 
+* Building and structuring a larger project, especially when implementing Redux
