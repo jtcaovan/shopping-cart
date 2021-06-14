@@ -30,9 +30,9 @@ This project was created in congruence with React and Redux documentation, tutor
 
 ## Screenshots
 
-# Home Page
+### Home Page
 
 ![Screen Shot 2021-06-13 at 11 04 58 PM](https://user-images.githubusercontent.com/61437879/121846445-de822380-cc9b-11eb-89d7-be49156d2bf1.png)
 
-# Fully Functional Shopping Cart
+### Fully Functional Shopping Cart
 ![Screen Shot 2021-06-13 at 11 04 49 PM](https://user-images.githubusercontent.com/61437879/121846443-dcb86000-cc9b-11eb-88fe-e5c4b3692d8f.png)
