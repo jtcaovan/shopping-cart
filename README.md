@@ -1,6 +1,6 @@
 # Ecommerce Shopping Cart using React-Redux
 
-## Description
+## Description: https://bloom-shopping-cart.herokuapp.com/
 
 A single-page ecommerce application built with React-Redux and styled with TailwindCSS.
 
@@ -25,3 +25,4 @@ This project was created in congruence with React and Redux documentation, tutor
 * Implementing nested Routes with react-router hooks
 * Organizing and structuring a larger project, especially when implementing Redux
 * Styling elements for better UX design.
+* Issues with deployment through github pages - used Heroku instead
