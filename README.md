@@ -1,6 +1,7 @@
 # Ecommerce Shopping Cart using React-Redux
+## Live Demo: https://bloom-shopping-cart.herokuapp.com/
 
-## Description: https://bloom-shopping-cart.herokuapp.com/
+## Description
 
 A single-page ecommerce application built with React-Redux and styled with TailwindCSS.
 
