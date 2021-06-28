@@ -28,6 +28,9 @@ This project was created in congruence with React and Redux documentation, tutor
 * Styling elements for better UX design.
 * Issues with deployment through github pages - used Heroku instead
 
+## Potential Updates
+* Add animations to make page more interactive - loading screen, shopping cart and home page animations 
+
 ## Screenshots
 
 ### Home Page
