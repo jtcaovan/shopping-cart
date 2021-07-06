@@ -31,6 +31,7 @@ This project was created in congruence with React and Redux tutorials, courses a
 * Fix responsive design of site 
 
 ## Potential Updates
+* Incorporate backend to store products and allow users to checkout (Stripe API)
 * Add animations to make page more interactive - loading screen, shopping cart and home page animations 
 
 ## Screenshots
