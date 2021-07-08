@@ -42,3 +42,4 @@ This project was created in congruence with React and Redux tutorials, courses a
 
 ### Fully Functional Shopping Cart
 ![Screen Shot 2021-06-13 at 11 04 49 PM](https://user-images.githubusercontent.com/61437879/121846443-dcb86000-cc9b-11eb-88fe-e5c4b3692d8f.png)
+# LocalLibrary
