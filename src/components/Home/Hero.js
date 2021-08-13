@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Hero() {
     return(
         <div 
-            className='bg-cover bg-fixed bg-no-repeat h-screen' 
+            className='bg-cover bg-fixed bg-no-repeat h-screen w-full' 
             style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${hero})` }}>
               
           <div className='absolute md:bottom-44 md:right-36 2xl:bottom-80 2xl:right-80 text-white'>

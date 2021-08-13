@@ -6,7 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function Footer() {
     return(
-        <footer className='bg-gray-200 bg-opacity-40 w-full my-20 pt-8 pb-28'>
+        <footer className='bg-gray-200 bg-opacity-40 w-full pt-8 pb-28'>
             <div className='flex justify-center p-6 space-x-24 '>
                 <div className='mr-10'>
                     <h1 className='font-display font-medium text-2xl text-gray-900'>Join the Bloom Family</h1>

@@ -5,7 +5,7 @@ import collection2 from 'assets/collection2.jpg'
 
 function CircleCards() {
     return(
-        <div>
+        <div className='mb-20'>
             <h1 className='m-10 p-6 text-5xl font-display text-gray-800 text-center'>Why You'll Love Bloom</h1>
             <ul className='flex m-auto w-9/12 space-x-12 text-center justify-around'>
                 <li>

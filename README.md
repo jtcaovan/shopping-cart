@@ -7,7 +7,7 @@ A single-page ecommerce application built with React-Redux and styled with Tailw
 
 ## Learning Outcomes
 
-This project was created in congruence with React and Redux tutorials, courses and documentation as a means for active learning. It was helpful to work on this project while learning React/Redux concepts to reinforce my knowledge. It was also a challenge for me to practice my UI/UX skills and design a real-world ecommerce website.
+This project was created in congruence with React and Redux tutorials, courses and documentation as a means for active learning. It was helpful to work on this project while learning React/Redux concepts to reinforce my knowledge. It was also a challenge for me to practice my UI/UX skills and design a real-world ecommerce website. 
 
 ## Features
 * A real-world ecommerce website with a fully functional shopping cart.
@@ -23,12 +23,12 @@ This project was created in congruence with React and Redux tutorials, courses a
 ## Challenges
 * Struggled to implement Redux into the application, used Redux-Toolkit to simplify the process.
 * Implementing nested Routes with react-router hooks
-* Organizing and structuring a larger project, especially when implementing Redux
+* Organizing and structuring a larger project, especially with Redux
 * Styling elements for better UX design.
 * Issues with deployment through github pages - used Heroku instead
 
-## Immediate Concerns/Updates
-* Optimize images for quicker loading
+## Immediate issues
+* Optimize images for quicker loading (properly size images)
 * Fix responsive design of site 
 
 ## Potential Updates

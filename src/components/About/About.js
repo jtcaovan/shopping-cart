@@ -26,9 +26,9 @@ const About = () => {
             </p>
 
             <h2 className='font-display text-4xl m-12'>Get in Contact!</h2>
-            <div className='flex w-full font-body leading-loose space-x-12 justify-between'>
+            <div className='flex w-full mb-20 font-body leading-loose space-x-12 justify-between'>
               <div className='w-7/12'>
-                <img src={aboutImg} alt=''/>
+                <img src={aboutImg} alt='Multiple plants'/>
               </div>
               <div className='w-5/12 flex-col space-y-5 m-auto text-left font-display'>
                 <p >Questions, comments, concerns? Bloom is always looking for new opportunities, local artisans, and ways to spread our love of plants!</p>
