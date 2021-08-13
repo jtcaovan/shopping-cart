@@ -7,7 +7,8 @@ A single-page ecommerce application built with React-Redux and styled with Tailw
 
 ## Learning Outcomes
 
-This project was created in congruence with React and Redux tutorials, courses and documentation as a means for active learning. It was helpful to work on this project while learning React/Redux concepts to reinforce my knowledge. It was also a challenge for me to practice my UI/UX skills and design a real-world ecommerce website. 
+This project was created alongside React and Redux tutorials, courses and documentation as a means for active learning. It was beneficial to create this project while learning React/Redux as it reinforced any gaps in my knowledge. 
+It was also a test of my CSS skills to see if I could design a real-world ecommerce website. As this project was used as a learning experience primarily for React/Redux, images are not properly optimized so web performance may be affected.
 
 ## Features
 * A real-world ecommerce website with a fully functional shopping cart.
