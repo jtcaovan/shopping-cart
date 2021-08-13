@@ -28,10 +28,11 @@ This project was created in congruence with React and Redux tutorials, courses a
 * Issues with deployment through github pages - used Heroku instead
 
 ## Immediate Concerns/Updates
+* Optimize images for quicker loading
 * Fix responsive design of site 
 
 ## Potential Updates
-* Incorporate backend to store products and allow users to checkout (Stripe API)
+* Incorporate backend to store products and allow users to checkout (e.g. Stripe API)
 * Add animations to make page more interactive - loading screen, shopping cart and home page animations 
 
 ## Screenshots
