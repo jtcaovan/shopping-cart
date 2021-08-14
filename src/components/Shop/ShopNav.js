@@ -5,7 +5,7 @@ function ShopNav() {
     let name = useParams()
 
     return(
-        <div>              
+        <div className='overflow-hidden'>              
             <div className='font-display mt-12 mb-2 text-4xl font-medium text-center text-gray-700'>
                 {name.collection === undefined && <h1> Bloom's Collection </h1>}
                 {name.collection === 'airPurifying' && <h1>Air Purifying Plants</h1>}

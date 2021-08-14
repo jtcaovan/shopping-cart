@@ -8,6 +8,7 @@ function TextCards() {
         <div className='mt-24'>
 
             <div className='bg-gray-200 bg-opacity-40 py-8 my-24 grid grid-rows-2 grid-cols-2 gap-y-24'>
+                
                 <div className='m-auto p-16 2xl:w-8/12 space-y-8'>
                     <h2 className='font-display text-4xl'>Brighten Your Living Space</h2>
                     <p class='font-body text-xl tracking-wide break-words leading-loose'>
@@ -23,13 +24,9 @@ function TextCards() {
                     </div>
                 </div>
 
-                <div >
-                    <img src={work} alt='' />
-                </div>
+                <img src={work} alt='' />
 
-                <div >
-                    <img src={window} alt='' />
-                </div>
+                <img className='ml-12' src={window} alt='' />
 
                 <div className='m-auto p-14 2xl:w-8/12 space-y-8'>
                     <h2 className='font-display text-4xl'>Breathe Better. Live Better.</h2>

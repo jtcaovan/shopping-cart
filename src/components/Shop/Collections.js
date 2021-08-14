@@ -42,7 +42,7 @@ function Collections() {
       />)
         
    return (
-      <div className='h-screen'>
+      <div className='h-screen overflow'>
         <Nav />
         <ShopHero />
         <ShopNav />

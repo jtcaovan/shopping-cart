@@ -1,5 +1,5 @@
 import React from 'react'
-import pepperonia from 'assets/pepperonia.jpg'
+import succulent from 'assets/succulent.jpg'
 import pots from 'assets/pots.jpg'
 import collection2 from 'assets/collection2.jpg'
 
@@ -9,7 +9,7 @@ function CircleCards() {
             <h1 className='m-10 p-6 text-5xl font-display text-gray-800 text-center'>Why You'll Love Bloom</h1>
             <ul className='flex m-auto w-9/12 space-x-12 text-center justify-around'>
                 <li>
-                    <img className="m-auto h-52 w-52 rounded-full" src={pepperonia} alt='' />
+                    <img className="m-auto h-52 w-52 rounded-full" src={succulent} alt='' />
                     <h2 className='text-2xl text-gray-800 mt-6 font-display'> Planted with Love </h2>
                     <p className='font-body font-light text-gray-800 w-80 mt-6 leading-relaxed break-words'>
                     Our plants cultivated by experts who share

@@ -34,7 +34,7 @@ function ItemDetail() {
         <div>
             <Nav />
             <div className='h-full'>
-                <div className='h-4/5 w-10/12 my-12 mx-auto flex space-x-24 justify-between '>
+                <div className='h-4/5 w-10/12 mt-12 mb-20 mx-auto flex space-x-24 justify-between '>
                     <img className='w-3/6' src={product.img} alt=''/>
 
                     <div className='w-2/5 flex-col divide-y-2 space-y-8'>

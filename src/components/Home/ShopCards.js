@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import snake2 from 'assets/snake2.jpg'
 import collection from 'assets/collection.jpg'
-import monstera from 'assets/monstera.jpg'
+import petFriendly from 'assets/petFriendly.jpg'
 import succulents from 'assets/succulents.jpg'
 
 function ShopCards () {
@@ -25,7 +25,7 @@ function ShopCards () {
                 </Link>
                 <Link to='/shop/petFriendly'>
                     <li className='space-y-6 cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
-                        <img className='h-96 shadow-xl hover:shadow-2xl' src={monstera} alt=''/>
+                        <img className='h-96 shadow-xl hover:shadow-2xl' src={petFriendly} alt=''/>
                         <p className='font-body'>Pet Friendly</p>
                     </li>
                 </Link>
