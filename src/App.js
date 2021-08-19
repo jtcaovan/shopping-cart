@@ -1,4 +1,5 @@
 import 'index.css'
+import ScrollToTop from "./scrollToTop";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux'
 import store from './store'
@@ -10,9 +11,11 @@ import Collections from 'components/Shop/Collections'
 import ItemDetail from 'components/Shop/ItemDetail';
 
 const App = () => {
+
     return (
         <Provider store={store}>
                 <Router>
+                    <ScrollToTop />
                     <Cart />
                     <Switch>
                         <Route exact path='/' component={Home} />

@@ -17,7 +17,7 @@ function TextCards() {
                         the most boring rooms to life.  
                     </p>
                     <div>
-                        <Link className='' to='/shop/all'>
+                        <Link className='' to='/shop'>
                             <button className='bg-red-500 font-body rounded-md text-white text-xl p-4 w-48
                             transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Now</button>
                         </Link>

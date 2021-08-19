@@ -23,7 +23,7 @@ function ShopCards () {
                         <p className='font-body'>Air Purifiers</p>
                     </li>
                 </Link>
-                <Link to='/shop/petFriendly'>
+                <Link to='/shop/pet-friendly'>
                     <li className='space-y-6 cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>
                         <img className='h-96 shadow-xl hover:shadow-2xl' src={petFriendly} alt=''/>
                         <p className='font-body'>Pet Friendly</p>
