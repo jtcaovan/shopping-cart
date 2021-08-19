@@ -9,7 +9,9 @@ A single-page ecommerce application built with React-Redux and styled with Tailw
 
 This project was created alongside React and Redux tutorials, courses and documentation as a means for active learning. 
 It was also a test of my CSS skills to see if I could design a real-world ecommerce website.
-Developing this project while learning React/Redux was beneficial as it reinforced any gaps in my knowledge. 
+Developing this project while learning React/Redux was beneficial as it reinforced any gaps in my knowledge.
+
+> Note: As this was a project to primarily learn React and Redux, this site is not optimized for mobile viewing.
 
 ## Features
 * A real-world eCommerce website with a fully functional shopping cart.
@@ -21,20 +23,21 @@ Developing this project while learning React/Redux was beneficial as it reinforc
 * React.js (react-router)
 * Redux.js (react-redux, redux-toolkit)
 * Tailwind CSS
+* Hosted on Heroku
 
 ## Challenges
+* Difficulty making the site responsive on mobile, should have began with mobile first design before styling for larger screens.
 * Struggled to implement Redux into the application, used Redux-Toolkit to simplify the process.
 * Implementing nested Routes with react-router hooks
 * Organizing and structuring a larger project, especially with Redux
-* Styling elements for better UX design.
-* Issues with deployment through github pages - used Heroku instead
+* Non-trivial amount of time figuring out the design and creating it.
 
 ## Immediate issues
-* Fix responsive design of site 
+* Fix responsive design of site for mobile
 
 ## Potential Updates
+* Add animations to make page more interactive - loading screen, scroll and page transition animations.
 * Incorporate backend to store products and allow users to enter checkout screen.
-* Add animations to make page more interactive - loading screen, shopping cart and home page animations 
 
 ## Screenshots
 
