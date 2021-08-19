@@ -8,10 +8,10 @@ import Footer from 'components/Footer/Footer'
 
 function Home() {
   return (
-    <div className='h-screen'>
+    <div className='w-screen h-full'>
       <Nav />
       <Hero />
-      <div className="relative min-h-0 h-auto">
+      <div className="relative h-full">
           <div className="h-full absolute -top-28 inset-x-0">
             <ShopCards />
             <TextCards />

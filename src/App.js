@@ -11,7 +11,6 @@ import Collections from 'components/Shop/Collections'
 import ItemDetail from 'components/Shop/ItemDetail';
 
 const App = () => {
-
     return (
         <Provider store={store}>
                 <Router>
