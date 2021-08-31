@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from 'components/Nav/ItemHeader'
+import Nav from 'components/Header/ItemHeader'
 import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart, displayCart, addQuantity, addToTotal} from '../Cart/cartSlice'
