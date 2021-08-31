@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <nav className='flex h-18 py-4 w-full m-auto text-white'> 
             <Link to='/'>
-                <h1 className="transform duration-300 hover:-translate-y-1 font-display font-thin tracking-wide m-auto pl-12 text-5xl">bloom</h1>
+                <h1 className="transform duration-300 hover:-translate-y-1 font-display font-thin tracking-wide m-auto pl-4 md:pl-12 text-3xl md:text-5xl">bloom</h1>
             </Link>
 
             <ul className='flex justify-end items-end pr-24 w-full space-x-12 font-display font-light'>

@@ -17,7 +17,7 @@ const App = () => {
                     <ScrollToTop />
                     <Cart />
                     <Switch>
-                        <Route exact path='/' component={Home} />
+                        <Route exact path='/' component={Home}/>
                         <Route exact path='/about' component={About} />
                         <Route exact path='/shop' component={Shop} />
                         <Route exact path='/shop/:collection' component={Collections} />

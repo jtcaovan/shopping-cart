@@ -12,7 +12,7 @@ function Home() {
       <Nav />
       <Hero />
       <div className="relative h-full">
-          <div className="h-full absolute -top-28 inset-x-0">
+          <div className="h-full w-screen absolute -top-28 inset-x-0">
             <ShopCards />
             <TextCards />
             <CircleCards />

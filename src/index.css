@@ -4,3 +4,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    box-sizing: border-box;
+  }
+
+html, body, #root {
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
