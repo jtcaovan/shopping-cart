@@ -3,9 +3,12 @@ import about from 'assets/about.jpg'
 
 function AboutHero() {
     return(
-        <div className='bg-cover bg-fixed bg-no-repeat h-full w-full' 
+        <div className='bg-center md:bg-cover bg-fixed bg-no-repeat h-3/4 md:h-screen md:w-full' 
             style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${about})` }}>
-            <h1 className='absolute top-1/2 left-1/2 inset-0 font-display text-white text-5xl m-auto z-10'>Who Are We?</h1>
+          <h1 className='flex text-4xl md:text-5xl h-full md:ml-auto md:mt-auto w-full md:w-1/2 
+           text-white font-display justify-center items-center'>
+                Who Are We?
+            </h1>
         </div>
     )
 }
