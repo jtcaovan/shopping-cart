@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from 'components/Header/Header'
+import Header from 'components/Header/Header'
 import Footer from 'components/Footer/Footer'
 import AboutHero from './AboutHero'
 import aboutImg from 'assets/aboutImg.jpg'
@@ -10,8 +10,8 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
   return (
-    <div className='h-screen'>
-      <Nav />
+    <div className='h-screen relative'>
+      <Header />
       <AboutHero />
       <div className="relative text-gray-700 bg-white min-h-0 h-auto">
         <div className='w-9/12 text-center m-auto'>

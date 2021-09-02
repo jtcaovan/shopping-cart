@@ -5,42 +5,42 @@ import { Link } from 'react-router-dom'
 
 function TextCards() {
     return(
-        <div className='mt-24'>
-
-            <div className='bg-gray-200 bg-opacity-40 py-8 my-24 grid grid-rows-2 grid-cols-2 gap-y-24'>
-                
-                <div className='m-auto p-16 2xl:w-8/12 space-y-8'>
-                    <h2 className='font-display text-4xl'>Brighten Your Living Space</h2>
-                    <p class='font-body text-xl tracking-wide break-words leading-loose'>
-                        Bring nature home with you. Styling your home with
-                        plants is an easy and inexpensive way to bring
-                        the most boring rooms to life.  
-                    </p>
-                    <div>
-                        <Link className='' to='/shop'>
-                            <button className='bg-red-500 font-body rounded-md text-white text-xl p-4 w-48
+        <div className='my-24 py-24 bg-gray-200 bg-opacity-40 w-full'>
+            <div className='2xl:w-3/4 m-auto flex flex-col justify-center space-y-16'>
+                <div className='flex flex-col md:flex-row w-full m-auto justify-between space-y-6 md:space-y-0'>
+                    <div className='flex justify-start md:w-1/2 mx-3 md:mx-0'>
+                        <img src={window} alt='' />
+                    </div>
+                    <div className='flex flex-col md:w-5/12 space-y-8 justify-center text-center md:text-left mx-4 md:mr-6 2xl:mr-0'>
+                        <h2 className='font-display text-2xl md:text-4xl'>Brighten Your Living Space</h2>
+                            <p class='font-body text-lg md:text-xl tracking-wide break-words leading-loose'>
+                                Bring nature home with you. Styling your home with
+                                plants is an easy and inexpensive way to bring
+                                the most boring rooms to life.  
+                            </p>
+                            <Link className='' to='/shop'>
+                                <button className='p-4 w-36 md:w-48 bg-red-500 font-body rounded-md text-white text-sm md:text-xl 
                             transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Now</button>
-                        </Link>
+                            </Link>
                     </div>
                 </div>
-
-                <img src={work} alt='' />
-
-                <img className='ml-12' src={window} alt='' />
-
-                <div className='m-auto p-14 2xl:w-8/12 space-y-8'>
-                    <h2 className='font-display text-4xl'>Breathe Better. Live Better.</h2>
-                    <p className='font-body text-xl tracking-wide break-words leading-loose'>
-                        Healthy air quality should be a top priority.
-                        Plants release oxygen and remove toxins from the air 
-                        so you can work, breathe, and sleep easier. </p>
-                <div>
-                <Link to='/shop/airPurifying'>
-                        <button className='p-4 w-48 bg-red-500 font-body rounded-md text-white text-xl 
-                        transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Air Purifiers</button>
-                    </Link>
+                <div className='flex flex-col md:flex-row w-full m-auto justify-between space-y-6 md:space-y-0 hidden md:visible'>
+                    <div className='flex flex-col md:w-5/12 space-y-8 justify-center text-center md:text-left mx-4 md:mr-6 2xl:mr-0'>
+                        <h2 className='font-display text-2xl md:text-4xl'>Breathe Better. Live Better.</h2>
+                        <p className='font-body text-lg md:text-xl tracking-wide break-words leading-loose'>
+                            Healthy air quality should be a top priority.
+                            Plants release oxygen and remove toxins from the air 
+                            so you can work, breathe, and sleep easier. </p>
+                        <Link to='/shop/airPurifying'>
+                            <button className='p-4 w-36 md:w-48 bg-red-500 font-body rounded-md text-white text-sm md:text-xl 
+                            transform duration-200 hover:-translate-y-1 hover:bg-red-600'>Shop Air Purifiers</button>
+                        </Link>
+                    </div>
+                    <div className='flex justify-start md:w-1/2 mx-3 md:mx-0'>
+                        <img src={work} alt='' />
+                    </div>
                 </div>
-                </div>
+                
             </div>    
         </div>
     )
