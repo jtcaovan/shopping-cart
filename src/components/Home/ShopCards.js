@@ -9,7 +9,7 @@ function ShopCards () {
     return(
         <div className='w-full bg-white'>
             <h1 className='pl-7 pt-14 pb-8 md:pb-20 font-display text-gray-800 text-3xl lg:text-6xl 2xl:w-3/4 m-auto'>Featured Collections</h1>
-            <ul className='flex flex-col md:flex-row space-y-12 md:space-y-0 m-auto text-center md:justify-around text-2xl 2xl:w-3/4 '>
+            <ul className='flex flex-col md:flex-row space-y-12 md:space-y-0 m-auto text-center md:justify-around md:justify-between text-2xl 2xl:w-3/4 '>
                 <Link to='/shop/beginner'>
                     <li className='space-y-6 w-3/4 md:w-full text-center m-auto cursor-pointer transform hover:scale-105 hover:text-red-500 duration-200'>          
                         <img className='h-96 w-full shadow-xl' src={snake2} alt=''/>
