@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import ShopDisplay from './ShopDisplay'
-import Nav from 'components/Header/Header'
+import Header from 'components/Header/Header'
 import Footer from 'components/Footer/Footer'
 import ShopHero from 'components/Shop/ShopHero'
 import ShopNav from 'components/Shop/ShopNav'
@@ -22,11 +22,11 @@ function Shop() {
     />)
 
   return (
-      <div className='h-screen'>
-        <Nav />
+      <div className='h-screen relative'>
+        <Header />
         <ShopHero />
         <ShopNav />
-        <div className='grid grid-cols-3 mx-8 mb-14 gap-x-8 gap-y-12'>
+        <div className='grid grid-cols-2 md:grid-cols-3 mx-8 mb-14 gap-x-8 gap-y-12'>
             {plants}
         </div>
         <Footer />

@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from 'components/Header/ItemHeader'
+import Header from 'components/Header/ItemHeader'
 import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart, displayCart, addQuantity, addToTotal} from '../Cart/cartSlice'
@@ -32,16 +32,16 @@ function ItemDetail() {
 
     return (
         <div>
-            <Nav />
+            <Header />
             <div className='h-full'>
-                <div className='h-4/5 w-10/12 mt-12 mb-20 mx-auto flex space-x-24 justify-between '>
-                    <img className='w-3/6' src={product.img} alt=''/>
+                <div className='h-4/5 w-10/12 mt-12 mb-20 mx-auto flex flex-col md:flex-row md:space-x-24 space-y-6 md:space-y-0 justify-between '>
+                    <img className='w-full md:w-3/6' src={product.img} alt=''/>
 
-                    <div className='w-2/5 flex-col divide-y-2 space-y-8'>
+                    <div className='w-full md:w-2/5 flex flex-col divide-y-2 space-y-8'>
                         <div className='space-y-8'>
                             <div className='flex justify-between '>
-                                <h1 className='font-display text-5xl text-gray-800'>{product.name}</h1>
-                                <p className='font-body text-xl text-gray-800'>${product.price}</p>
+                                <h1 className='font-display text-2xl md:text-5xl text-gray-800'>{product.name}</h1>
+                                <p className='font-body text-lg md:text-xl text-gray-800'>${product.price}</p>
                             </div>
 
                             <div>

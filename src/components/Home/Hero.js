@@ -7,10 +7,10 @@ function Hero() {
     return(
       <div className='relative'>
         <Header />
-        <div className='bg-center md:bg-cover bg-fixed bg-no-repeat h-screen md:w-full' 
+        <div className='bg-center bg-cover bg-fixed bg-no-repeat h-screen md:w-full' 
           style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${hero})` }}>
           <div className='flex flex-col h-full px-4 md:ml-auto md:mt-auto w-full md:w-1/2 justify-center text-white font-display space-y-4 md:space-y-6'>
-            <p className='text-2xl md:text-5xl'>
+            <p className='text-3xl md:text-5xl'>
               Beautiful Plants <br></br> Right to your Doorstep
             </p>
             <p className='font-light text-lg sm:text-2xl'>Shopping for Plants Has Never Been Easier</p>
