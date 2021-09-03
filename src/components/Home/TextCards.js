@@ -24,9 +24,9 @@ function TextCards() {
                             </Link>
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row w-full m-auto justify-between space-y-6 md:space-y-0 hidden md:flex'>
+                <div className='flex flex-col-reverse md:flex-row w-full m-auto justify-between space-y-8 md:space-y-0'>
                     <div className='flex flex-col md:w-5/12 space-y-8 justify-center text-center md:text-left mx-4 md:mr-6 2xl:mr-0'>
-                        <h2 className='font-display text-2xl md:text-4xl'>Breathe Better. Live Better.</h2>
+                        <h2 className='font-display pt-4 md:pt-0 text-2xl md:text-4xl'>Breathe Better. Live Better.</h2>
                         <p className='font-body text-lg md:text-xl tracking-wide break-words leading-loose'>
                             Healthy air quality should be a top priority.
                             Plants release oxygen and remove toxins from the air 
