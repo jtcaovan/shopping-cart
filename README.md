@@ -3,7 +3,7 @@
 
 ## Description
 
-A single-page ecommerce application built with React-Redux and styled with TailwindCSS.
+A single-page ecommerce application built with React-Redux, styled with TailwindCSS, and deployed with Heroku.
 
 ## Learning Outcomes
 
