@@ -42,8 +42,9 @@ Developing this project while learning React/Redux was beneficial as it reinforc
 
 ## Screenshots
 
-### Home Page
+<img width="1920" alt="bloom-3" src="https://user-images.githubusercontent.com/61437879/132082210-dba67c6f-de8b-4c29-a9cc-3677e40ccbb9.png">
 
+### Home Page
 ![Screen Shot 2021-06-13 at 11 04 58 PM](https://user-images.githubusercontent.com/61437879/121846445-de822380-cc9b-11eb-89d7-be49156d2bf1.png)
 
 ### Shopping Cart
