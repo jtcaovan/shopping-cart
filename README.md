@@ -11,11 +11,11 @@ This project was created alongside React and Redux tutorials, courses and docume
 It was also a test of my CSS skills to see if I could design a real-world ecommerce website.
 Developing this project while learning React/Redux was beneficial as it reinforced any gaps in my knowledge.
 
-9/2/21 - Updated to be responsive on mobile devices. Great practice to fi
+9/2/21 - Updated to be responsive on mobile devices. Great practice working with different media queries/breakpoints.
 
 ## Features
 * A real-world eCommerce website with a fully functional shopping cart.
-* Responsive design for different screen sizes
+* Responsive design for all screen sizes
 * Filter products by specfic collection
 * Clean, minimalist UI design
 
@@ -30,15 +30,15 @@ Developing this project while learning React/Redux was beneficial as it reinforc
 * Difficulty making the site responsive on mobile, initial styling was a mess so it took some effort to clean up my mistakes (used a lot of absolute positioning - fixed using flexbox and grid)
 * Struggled to implement Redux into the application, used Redux-Toolkit to simplify the process.
 * Implementing nested Routes with react-router hooks
-* Organizing and structuring a larger project, especially with Redux
-* Non-trivial amount of time figuring out the design and creating it.
+* Organizing and structuring a larger project, especially with Redux. 
+* Designing the layout of the site
 
-## Immediate issues
+## Immediate issues/Potential Updates
 * Fix responsive design of site for mobile (Updated 9/2/21)
-
-## Potential Updates
+* Increase page performance, site loads extremely slow - images are not optimized
 * Add animations to make page more interactive - loading screen, scroll and page transition animations.
-* Incorporate backend to store products and allow users to enter checkout screen.
+* Store products in a backend database
+* Create a checkout page
 
 ## Screenshots
 
